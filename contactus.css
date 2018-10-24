@@ -1,0 +1,31 @@
+.contact-us{
+
+    margin-top: 10vw;
+}
+.contact-us-hexagon{
+    width: 17vw!important;
+}
+.social{
+    width: 2vw;
+    color: white;
+}
+footer{
+    padding-top: 1vw!important;
+}
+
+@media only screen and (max-width: 768px)
+{
+    .contact-us{
+
+        margin-top: -13vw!important;
+
+    }
+    .contact-numbers p{
+        margin: .2vw;
+    }
+    .hide-show{
+        display: none;
+
+    }
+
+}

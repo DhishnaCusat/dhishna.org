@@ -1,0 +1,200 @@
+.mobile-home{
+    position: relative;
+}
+
+.mobile-home-bubble{
+    position: absolute;
+    width: 46vw;
+    top: 6vw;
+    left: 28vw;
+}
+
+.dhishnamobiletleft1{
+    position: absolute;
+    width: 9vw;
+    top: 24vw;
+    left: 36vw;
+
+}
+.mobile-home-hexagon{
+    position: absolute;
+    width: 42vw;
+    top: 6vw;
+    left: 30vw;
+
+}
+.mobile-home-letter{
+    position: absolute;
+    width: 4vw;
+    top:15vw;
+
+}
+.mob-hom-i{
+ width: 1.2vw;
+    left: 43vw;
+}
+.mob-hom-d{
+
+    left: 33vw;
+}
+.mob-hom-h{
+
+    left: 38vw;
+}
+.mob-hom-s{
+
+    left: 45vw;
+    width: 3.7vw;
+ }
+.mob-hom-h2{
+
+    left: 50vw;
+}
+.mob-hom-n{
+
+    left: 55vw;
+}
+.mob-hom-a{
+
+    left: 60vw;
+    width: 4.6vw;
+}
+.dhishnamobiletopbar{
+    position: absolute;
+    width: 11vw;
+    top: 12vw;
+    left: 33vw;
+}
+
+.mobile-home-number{
+    position: absolute;
+    width: 3vw;
+    top:22vw;
+}
+.mob-hom-2{
+
+    left: 49vw;
+}
+.mob-hom-0{
+    left: 53vw;
+}
+
+.mob-hom-1{
+    left: 57vw;
+    width: 2.2vw;
+}
+
+.mob-hom-8{
+    left: 61vw;
+}
+
+#mob-about-dhishna
+{
+    z-index: 2;
+
+    color: white;
+    position: absolute;
+    top:28vw;
+    left: 29vw;
+    padding: 1vw;
+    font: "Roboto Mono";
+    letter-spacing: .1rem;
+}
+
+@media only screen and (max-width: 600px)
+{
+    .mobile-home-bubble{
+
+        top: 12vw;
+
+    }
+    .dhishnamobiletleft1{
+
+        width:22vw;
+        top: 61vw;
+        left: 23vw;
+
+    }
+
+    .dhishnamobiletopbar{
+        width: 22vw;
+        top: 30vw;
+        left: 12vw;
+
+
+    }
+    .mobile-home-hexagon{
+
+        top: 30vw;
+        width: 84vw!important;
+        left: 8vw!important;
+
+
+    }
+    .mobile-home-letter{
+        width: 10vw;
+        top:37vw;
+    }
+
+    #mob-about-dhishna
+    {
+     letter-spacing: 0vw;
+        font-size: 4vw;
+        top:78vw;
+        left: 8vw;
+    }
+
+
+    .mob-hom-i{
+        width: 3.08vw!important;
+        left: 37vw;
+    }
+    .mob-hom-d{
+
+        left: 13vw;
+    }
+    .mob-hom-h{
+
+        left: 25vw;
+    }
+    .mob-hom-s{
+
+        left: 42vw;
+        width: 9.7vw;
+    }
+    .mob-hom-h2{
+
+        left: 54vw;
+    }
+    .mob-hom-n{
+
+        left: 66vw;
+    }
+    .mob-hom-a{
+
+        left: 77vw!important;
+        width: 12vw!important;
+    }
+
+    .mobile-home-number{
+        position: absolute;
+        width: 9vw;
+        top:55vw;
+    }
+    .mob-hom-2{
+
+        left: 49vw;
+    }
+    .mob-hom-0{
+        left: 59vw;
+    }
+
+    .mob-hom-1{
+        left: 69vw;
+        width: 6.8vw;
+    }
+
+    .mob-hom-8{
+        left: 78vw!important;
+    }
+}

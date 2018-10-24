@@ -1,0 +1,261 @@
+
+body{
+    background-color:"#252527";
+
+
+}
+.obj1 {
+    text-align: center;
+    position: relative;
+    background-color:"#252527";
+
+
+
+
+}
+
+
+.size-d{
+    width: 4.5vw;
+    position: absolute;
+    left: 14vw;
+    bottom: -34vw;
+
+   
+}
+.size-h{
+    width: 4.7vw;
+    position: absolute;
+    bottom: -34vw;
+    left: 20vw;
+
+
+}
+.size-i{
+    position: absolute;
+    width: 1.4vw;
+    bottom: -34vw;
+    left: 26vw;
+
+
+
+}
+.size-s{
+    width: 4.4vw;
+    position: absolute;
+    bottom: -34vw;
+    left: 28.7vw;
+
+
+}
+.size-h2 {
+    width: 4.6vw;
+    position: absolute;
+    bottom: -34vw;
+    left: 34.7vw;
+}
+
+
+
+.size-n{
+    width: 4.7vw;
+    position: absolute;
+
+
+    bottom: -34vw;
+    left: 40.7vw;
+
+
+}
+
+
+.size-a{
+    width: 5.4vw;
+    position: absolute;
+
+    bottom: -34vw;
+    left: 46.7vw;
+
+
+}
+.logo{
+    position: absolute;
+    width: 6vw;
+
+    left:-6vw;
+  margin-top: 0vw!important;
+   
+}
+
+
+
+
+.orange-piece{
+    width: 5.7vw;
+    position: absolute;
+    bottom: -33.7vw;
+    left: 27vw;
+
+}
+.piece-11{
+    width: 22.3vw;
+
+    position: absolute;
+    left: 13vw;
+    bottom: -33.9vw;
+
+
+}
+.piece-2{
+    width: 15vw;
+
+    position: absolute;
+    left: 54vw;
+    bottom: -24vw;
+    background-color: white;
+}
+.num {
+    width: 4.3vw;
+    position: absolute;
+    bottom: -24vw;
+    opacity: .5;
+}
+
+.scrambler{
+    position: absolute;
+    top: 23vw;
+    left: 28vw;
+}
+
+
+
+
+.num-2{
+    left: 47vw;
+    width: 4.2vw;
+
+}
+.num-0{
+    left: 52.5vw;
+
+}
+.num-1{
+    left:58vw;
+    width: 3.2vw;
+ }
+.num-8{
+
+
+    left: 63vw;
+
+}
+
+.coverup{
+    background-color:#252527;
+    position: absolute;
+    bottom: -36vw;
+    height: 10vw;
+    width: 55vw;
+    left: 14vw;
+
+}
+
+
+#nCanvasRender{
+    z-index: 4!important;
+}
+@media screen and (max-width:568px) {
+
+    .size-a{
+        margin-top: 60vw;
+    }
+
+
+
+
+}
+
+div.dg.main.a{
+    display: none !important;
+}
+
+div#stats{
+    display: none;
+}
+
+/*navbar styles goes here*/
+.navbar {
+    margin-bottom: 0;
+    background-color: transparent!important;
+    border: 0;
+    font-size: .8em !important;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 4px;
+    opacity:0.9;
+    height: 6vw!important;
+}
+
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand {
+    color: #d5d5d5 !important;
+    margin-top: 2vw;
+}
+
+/* On hover, the links will turn white */
+.navbar-nav li a:hover {
+    color: #fff !important;
+    border-bottom: 1px solid red!important;
+}
+
+/* The active link */
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color:#29292c !important;
+
+}
+
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-default {
+    border-color: transparent!important;
+    margin-right: 2vw;
+
+}
+
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    border:none;
+}
+.mobile-home{
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px)
+{
+ .obj1{
+    margin-top:25vw;
+ }
+    .nav.navbar-nav.navbar-right{
+        background-color: black;
+    }
+    .mobile-home{
+        display: block;
+    }
+    .obj1{
+        display: none;
+    }
+    footer{
+        height: 10vw!important;
+    }
+    footer p{
+        font-size: 2vw!important;
+    }
+    .brand-name{
+        height: 3vw;
+    }
+
+}
