@@ -13,6 +13,7 @@
 
     height: 50vw!important;
     overflow-y: scroll;
+    cursor: auto;
 
 }
 .events-sidepiece{
@@ -87,6 +88,9 @@
     width: 10vw;
     color: white!important;
     background-color: #e74c3c!important;
+    margin:  0 auto;
+    margin-top:1.5vw ;
+    margin-left: 14vw;
 }
 
 
@@ -107,5 +111,15 @@
     .nav.navbar-nav.navbar-right{
         background-color: black;
     }
+    .grid{
+        width: 100%!important;
+    }
+    .event-details{
+
+        height: 100vw!important;
+        overflow-y: scroll;
+
+    }
+
 
 }
