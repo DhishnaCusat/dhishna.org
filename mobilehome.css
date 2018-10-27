@@ -29,6 +29,17 @@
     top:15vw;
 
 }
+
+.mob-soc-icn{
+    width: 6vw;
+    position: absolute;
+  bottom: -130vw;
+    right: 5vw;
+}
+.mob-soc-insta{
+
+    bottom: -138vw;
+}
 .mob-hom-i{
  width: 1.2vw;
     left: 43vw;

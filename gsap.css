@@ -9,8 +9,23 @@ body{
     position: relative;
     background-color:"#252527";
 
+}
 
-
+.soc-icn
+{
+    position: absolute;
+    width: 3vw;
+    top:30vw;
+    right: 4vw;
+    opacity: 1;
+}
+.soc-icn:hover {
+    width: 4vw;
+  opacity: 1;
+    right: 3vw;
+}
+.soc-fb{
+    top:25vw;
 
 }
 
