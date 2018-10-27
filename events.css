@@ -101,6 +101,11 @@
     .aboutus-sidepiece{
         top: 12vw!important;
     }
+    
+    .md-modal a
+    {
+    width: 46vw;
+    }
 
 
     .events-container{
