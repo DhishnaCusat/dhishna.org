@@ -1,6 +1,6 @@
 .grid{
     margin-bottom: 3vw;
-    top:20vw;
+    top:15vw;
 
     opacity:.8;
 
@@ -8,12 +8,25 @@
 
 
 }
+#mailtag{
+    color: turquoise;
+}
+.grid img{
+    position: absolute;
+    left: 35vw;
+    top:3.5vw;
 
+}
 .event-details{
 
     height: 40vw!important;
     overflow-y: scroll;
     cursor: auto;
+
+   background-size: cover;
+
+    font-family:"Chalkboard SE";
+    font-weight: bolder;
 
 }
 .events-sidepiece{
@@ -84,15 +97,6 @@
 .navbar-default .navbar-collapse, .navbar-default .navbar-form{
     border:none;
 }
-.md-modal a{
-    width: 10vw;
-    color: white!important;
-    background-color: #e74c3c!important;
-    margin:  0 auto;
-    margin-top:1.5vw ;
-    margin-left: 14vw;
-}
-
 
 
 @media only screen and (max-width: 767px)
@@ -101,10 +105,15 @@
     .aboutus-sidepiece{
         top: 12vw!important;
     }
-    
-    .md-modal a
-    {
-    width: 46vw;
+
+    .md-modal a{
+        width: 46vw;
+
+    }
+    .grid img{
+        left: 3vw;
+        top:3vw;
+
     }
 
 
