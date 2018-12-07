@@ -111,7 +111,8 @@
 
     }
     .grid img{
-        left: 3vw;
+        width: 40vw;
+        left: -5vw;
         top:3vw;
 
     }
