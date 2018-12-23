@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="gsap.css">
 		<link rel="stylesheet" href="aboutus.css">
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/glitch-slideshow.css" />
+		<link rel="stylesheet" href="sponsors.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -20,91 +20,121 @@
 
 
 
-		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-	</head>
 
 
 
 
 
-	<body class="demo-2 loading">
+
+	<body >
 
 
 
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="gsap.html"><img src="images/logo3.svg"></a>
+	<!--<nav class="navbar navbar-default navbar-fixed-top">-->
+		<!--<div class="container-fluid">-->
+			<!--<div class="navbar-header">-->
+				<!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">-->
+					<!--<span class="icon-bar"></span>-->
+					<!--<span class="icon-bar"></span>-->
+					<!--<span class="icon-bar"></span>-->
+				<!--</button>-->
+				<!--<a class="navbar-brand" href="gsap.html"><img src="images/logo3.svg"></a>-->
+			<!--</div>-->
+			<!--<div class="collapse navbar-collapse" id="myNavbar">-->
+				<!--<ul class="nav navbar-nav navbar-right">-->
+					<!--<li><a href="index.html">HOME</a></li>-->
+					<!--<li><a href="aboutus.html">ABOUT US</a></li>-->
+					<!--<li><a href="eventspage.html">EVENTS</a></li>-->
+					<!--<li><a href="contactus.html">CONTACT</a></li>-->
+					<!--<li><a href="sponsors.html">SPONSORS</a></li>-->
+
+				<!--</ul>-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</nav>-->
+
+		<main id="sponsors-desktop">
+
+			<div class=" col-lg-6 spon-section1">
+				<img  id="sponsor-img" src="sponsors-img/sponsor-leftback%20(1).svg">
+
 			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="aboutus.html">ABOUT US</a></li>
-					<li><a href="eventspage.html">EVENTS</a></li>
-					<li><a href="contactus.html">CONTACT</a></li>
-					<li><a href="sponsors.html">SPONSORS</a></li>
 
-				</ul>
-			</div>
-		</div>
-	</nav>
 
-		<main>
-
-			<div class="content">
-				<div class="slides slides--contained effect-2">
-					<div class="slide slide--current">
-						<div class="slide__img glitch" style="background-image: url(img/unnamed.jpg);"></div>
-						<div class="slide__text">
-							<h2 class="slide__title">JETBRAINS</h2>
-							<p class="slide__description">JetBrains is a cutting-edge software vendor specializing in the creation of intelligent development tools, .</p>
-						</div>
-					</div>
-					<div class="slide">
-						<div class="slide__img glitch" style="background-image: url(img/share.png);"></div>
-						<div class="slide__text">
-							<h2 class="slide__title">WOLFRAM ALPHA</h2>
-							<p class="slide__description">Wolfram Alpha is a computational knowledge engine or answer engine developed by Wolfram Alpha LLC.</p>
-						</div>
-					</div>
-					<div class="slide">
-						<div class="slide__img glitch" style="background-image: url(img/3.jpg);"></div>
-						<div class="slide__text">
-							<h2 class="slide__title"></h2>
-							<p class="slide__description">I just the took to calling it the Bat. And yes Mr. Wayne, it does come in black.</p>
-						</div>
-					</div>
-					<div class="slide">
-						<div class="slide__img glitch" style="background-image: url(img/4.jpg);"></div>
-						<div class="slide__text">
-							<h2 class="slide__title">Fine Quest</h2>
-							<p class="slide__description">You have nothing, nothing to threaten me with. Nothing to do with all your strength.</p>
-						</div>
-					</div>
-					<div class="slide">
-						<div class="slide__img glitch" style="background-image: url(img/5.jpg);"></div>
-						<div class="slide__text">
-							<h2 class="slide__title">Dome Being</h2>
-							<p class="slide__description">I'll be standing where l belong. Between you and the people of Gotham.</p>
-						</div>
-					</div>
+			<div class="col-lg-6 spon-section2">
+				<h1 id="our-spons">OUR SPONSORS</h1>
+				<p id="desc-spons">A big Thank You to our sponsors for helping us make this fest a reality. We couldn't have done it without you!</p>
+				<h3 id="make-a-ton">Make-a-Ton SPONSORS</h3>
+				<div class="spon-section3">
+				<h4 id="industry-sponsor">INDUSTRY PARTNERS</h4>
+				<a href="http://fullcontact.com"><img id="full-img" src="sponsors-img/full.svg"></a>
+				<h4 id="community-sponsor">COMMUNITY PARTNERS</h4>
+				<a href="https://startupmission.kerala.gov.in"><img id="ksum-img" src="sponsors-img/ksum.svg"></a>
+				<h4 id="tech-sponsor">TECHNOLOGY LEARNING PARTNERS</h4>
 				</div>
-				<nav class="slide-nav">
-					<button class="slide-nav__button"><span>Previous</span></button>
-					<button class="slide-nav__button"><span>Next</span></button>
-				</nav>
+				<a href="https://tinkerhub.org/"><img id="tinker-img" src="sponsors-img/tinker.svg"></a>
+				<div class="spon-section3">
+				<h4 id="spons-1">PRIZE SPONSORS</h4>
+				<a href="https://www.jetbrains.com"><img id="jb-img" src="sponsors-img/jetbrains.svg"></a>
+				<a href="http://www.wolfram.com"><img id="wolfram-img" src="sponsors-img/wolfram.svg"></a>
+				<a href="https://www.thesouledstore.com"><img id="store-img" src="sponsors-img/store.svg"></a>
+					<h4 id="spons-2">ORGANISING PARTNERS</h4>
+				<a href="http://www.inqinnovation.com/"><img id="inq-img" src="sponsors-img/inq.svg"></a>
+				<a href="http://cittic.cusat.ac.in/"><img id="cittic-img" src="sponsors-img/cittic.svg"></a>
+				</div>
+				<img id="aces-img" src="sponsors-img/aces.svg">
+
+
+
+
+
+
 			</div>
+
 		</main>
 
+	<main id="sponsors-mobile">
+
+		<div class=" col-lg-6 spon-section1">
+			<img  id="mob-sponsor-img" src="sponsors-img/sponsor-leftback%20(1).svg">
+
+		</div>
+		<div class=" col-lg-6 spon-section2">
+
+			<h1 id="mob-our-spons">OUR SPONSORS</h1>
+			<p id="mob--1">A big Thank You to our sponsors for helping us make this fest a reality. We couldn't have done it without you!</p>
+			<h3 id="mob-make-a-ton">Make-a-Ton SPONSORS</h3>
+			<div class="spon-section3">
+				<h4 id="mob-industry-sponsor">INDUSTRY PARTNERS</h4>
+				<a class="alignment" href="http://fullcontact.com"><img id="mob-full-img" src="sponsors-img/full.svg"></a>
+				<h4 id="mob-community-sponsor">COMMUNITY PARTNERS</h4>
+				<a class="alignment" href="https://startupmission.kerala.gov.in"><img id="mob-ksum-img" src="sponsors-img/ksum.svg"></a>
+				<h4 id="mob-tech-sponsor">TECHNOLOGY LEARNING PARTNERS</h4>
+			</div>
+			<a class="alignment" href="https://tinkerhub.org/"><img id="mob-tinker-img" src="sponsors-img/tinker.svg"></a>
+			<div class="spon-section3">
+				<h4 id="mob-spons-1">PRIZE SPONSORS</h4>
+				<a class="alignment" href="https://www.jetbrains.com"><img id="mob-jb-img" src="sponsors-img/jetbrains.svg"></a>
+				<a  class="alignment" href="http://www.wolfram.com"><img id="mob-wolfram-img" src="sponsors-img/wolfram.svg"></a>
+				<a href="https://www.thesouledstore.com"><img id="mob-store-img" src="sponsors-img/store.svg"></a>
+				<h4 id="mob-spons-2">ORGANISING PARTNERS</h4>
+				<a class="alignment" href="http://www.inqinnovation.com/"><img id="mob-inq-img" src="sponsors-img/inq.svg"></a>
+				<a class="alignment" href="http://cittic.cusat.ac.in/"><img id="mob-cittic-img" src="sponsors-img/cittic.svg"></a>
+			</div>
+			<img class="alignment" id="mob-aces-img" src="sponsors-img/aces.svg">
 
 
-		<script src="js/imagesloaded.pkgd.min.js"></script>
-		<script src="js/demo.js"></script>
-		<script src="js/demo2.js"></script>
+
+
+
+
+
+
+
+			</div>
+
+
+
+	</main>
 	</body>
 </html>
