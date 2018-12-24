@@ -15,7 +15,7 @@ dic = {1: "makeactive('navhome', '#intro');",
     };
 
 $(window).scroll(function(){
-    if ((time+500-Date.now())<0) {
+    if ((time+1500-Date.now())<0) {
 
         if(top1 - $(window).scrollTop() < 0 && index < 4){
             top1 = $(window).scrollTop();

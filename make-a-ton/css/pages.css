@@ -12,7 +12,7 @@ html{
 
 body{
     font-family: 'Orbitron', sans-serif;
-    height: 400%;
+    height: 1000%;
     width:100%;
     background-color: #0D061E;
     ;
@@ -61,4 +61,27 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+.registerbutton{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+
+    vertical-align: center;
+    margin: 10px;
+
+    background: linear-gradient(to bottom, white 50%, rgba(66,13,91,0.3) 50%);
+    background-size: 100% 200%;
+    background-position: left bottom;
+    z-index: 0;
+
+}
+
+.registerbutton:hover {
+    /*animation : colourdiv 5s ease;*/
+
+    background-position: left top;
+
+    color: black;
 }
