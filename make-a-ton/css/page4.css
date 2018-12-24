@@ -1,0 +1,22 @@
+
+.sponsormoney{
+    position: relative;
+    max-width: 100%;
+}
+
+#SponsorTitle{
+    position: relative;
+    top:20%;
+
+    left:10%;
+
+}
+
+
+
+#sponsorh2{
+    position: absolute;
+    font-size: 3rem;
+    left: 50%;
+    transform:translate(-50%);
+}

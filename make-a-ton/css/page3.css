@@ -1,0 +1,40 @@
+.sponsorimg{
+    max-width: 50%;
+}
+
+.pehia{
+    max-width: 100%;
+}
+
+#PartnersTitle{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+#partnerh2{
+    position: absolute;
+    font-size: 3rem;
+    left: 50%;
+    transform:translate(-50%);
+}
+
+
+.white-card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 25%;
+
+    float: left;
+    height: 300px;
+    vertical-align: center;
+    margin: 10px;
+
+    background-color: white;
+}

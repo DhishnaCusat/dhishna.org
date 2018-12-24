@@ -1,0 +1,63 @@
+.contactimg {
+    border-radius: 50%;width: 50%;
+    position: relative;
+
+}
+
+.cardcontact {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 25%;
+
+    float: left;
+    height: 500px;
+    vertical-align: center;
+    margin: 10px;
+
+    background: linear-gradient(to bottom, white 50%, rgba(66,13,91,0.3) 50%);
+    background-size: 100% 200%;
+    background-position: left bottom;
+    z-index: 0;
+}
+
+.cardcontact:hover {
+    /*animation : colourdiv 5s ease;*/
+
+    background-position: left top;
+
+    color: black;
+}
+
+
+#contact{
+    position: relative;
+    top:10%;
+
+    left:50%;
+
+    transform: translate(-26%);
+
+}
+
+
+
+
+#contact2h{
+    position: absolute;
+    font-size: 3rem;
+    left: 50%;
+    transform:translate(-50%);
+
+
+}
+
+
+.mapouter{text-align:right;height:100%;width:100%;}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:30%;
+    width:100%;
+    position: relative;
+    top:10%;
+}

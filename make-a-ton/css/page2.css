@@ -1,0 +1,88 @@
+
+
+#title{
+    position: relative;
+    top: 35%;
+    left:50%;
+    transform: translate(-50%);
+
+}
+#gains{
+    font-size: 4rem;
+
+}
+
+.cards{
+    position: relative;
+    top:50%;
+    left:10%;
+
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 25%;
+
+    float: left;
+    height: 300px;
+    vertical-align: center;
+    margin: 10px;
+
+    background: linear-gradient(to bottom, white 50%, rgba(66,13,91,0.3) 50%);
+    background-size: 100% 200%;
+    background-position: left bottom;
+    z-index: 0;
+
+}
+
+.card:hover {
+    /*animation : colourdiv 5s ease;*/
+
+    background-position: left top;
+
+    color: black;
+}
+
+.card-title{
+    opacity: 1;
+    font-size: 1.5rem;
+}
+
+.card-title:hover{
+    color: black;
+
+
+}
+
+.cardinfo{
+    opacity: 1;
+    position: absolute;
+    padding: 5px 16px 5px 16px;
+    line-height:  1.5rem;
+    font-size: 1.25em;
+    top:30%;
+
+
+}
+
+.container {
+
+    position: relative;
+    top:10%;
+
+    height: 90%;
+}
+.col{
+
+
+}
+
+
+@keyframes colourdiv {
+    0%   {background: linear-gradient(to right, white 0% , rgba(66,13,91,0.3) 0%);}
+    25%  {background: linear-gradient(to right, white 25% , rgba(66,13,91,0.3) 25%);}
+    50%  {background: linear-gradient(to right, white 50% , rgba(66,13,91,0.3) 50%);}
+    100% {background: linear-gradient(to right, white 100% , rgba(66,13,91,0.3) 100%);}
+}
