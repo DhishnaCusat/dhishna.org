@@ -1,208 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
 
-<!doctype html>
-<html >
-<head>
-    <title>Make-A-Ton</title>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A hackathon part of Dhishna 2019">
+    <meta name="author" content="Akul Santhosh">
 
+    <title>Make-a-Ton</title>
 
-    <link rel="stylesheet" href="css/pages.css"/>
-    <link rel="stylesheet" href="css/page2.css"/>
-    <link rel="stylesheet" href="css/page3.css"/>
-    <link rel="stylesheet" href="css/page4.css"/>
-    <link rel="stylesheet" href="css/page5.css"/>
+    <script src="https://js.instamojo.com/v1/button.js"></script>
 
-    <link rel="stylesheet" href="css/navbar.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/all.css" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  </head>
 
+  <body id="page-top">
 
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="#page-top">Make-a-Ton</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#page-top">Home</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#prizes">Prizes</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#details">Details</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#sponsors">Sponsors</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
+    <!-- Home -->
+    <header class="masthead d-flex">
+      <div class="container text-center my-auto text-white">
+        <h1 class="mb-1">Make-a-Ton</h1>
+        <h3 class="mb-5">
+          <em>A 24 hour open hackathon, for university and higher secondary students,
+aimed at bringing together Makers to celebrate the spirit of Build over Buy!</em>
+        </h3>
 
+        <h3 class="mb-5">
+          <em><br><br><br>When and Where<br><br></em>
+          <em>19th-20th January 2019 at KTIZ, Kallamaserry.</em>
+        </h3>
+        <center>
+        <a href="https://www.instamojo.com/dhishna/make-o-tan-demo/" rel="im-checkout" data-behaviour="remote" data-style="flat" data-text="Register" class="payment"></a>
+        </center>
+      </div>
+      <div class="overlay"></div>
+    </header>
 
-</head>
-<body>
-<!--top navbar-->
-<div class="topnav">
-    <div class="active" href="#intro" id = "navhome" onclick="makeactive('navhome','#intro')"><h2 class="textrotate"> Home</h2></div>
-
-
-
-    <div  id = "navprize" onclick="makeactive('navprize','#prizes')"><h2 class="textrotate">Prizes</h2></div>
-
-    <div id = "navcont" onclick="makeactive('navcont','#contactUs')"><h2 class="textrotate">Contact</h2></div>
-
-    <div id = "navpartner" onclick="makeactive('navpartner','#partners')"><h2 class="textrotate">Partners</h2></div>
-
-
-
-
-
-</div>
-
-<!-- Page 1 Intro -->
-<div class="page" id="intro">
-    <div id="Introtitle">
-
-        <!--<div class="container1 scrambler">-->
-        <!--<div class="text"></div>-->
-        <!--</div>-->
-
-        <h1 id="mainheading">Make-a-Ton</h1>
-    </div>
-
-    <div id="Introcaption">
-        <p>A 24 hour open hackathon, for university and higher secondary students,</br> aimed at bringing together Makers to
-            celebrate the spirit of Build over
-            Buy!</p><br>
-        <div class = "registerbutton" onclick="window.location = 'https://dhishna.org/eventspage.html'">
-        <div class="card-title"><h3>Register</h3></div>
+    <!-- Prizes -->
+    <section class="content-section" id="prizes">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">Prizes and Opportunity</h3>
+          <h2 class="mb-5">Whats up for grabs?</h2>
         </div>
-        <br>
-        <h2>When and Where</h2>
-        <h1>19th-20th January 2019 at KTIZ, Kallamaserry.</h1>
-    </div>
-</div>
-
-
-<!-- Page 2 Rewards -->
-<div class="page" id="prizes">
-    <div id="title">
-        <h2 id="gains">What's up for grabs?</h2>
-    </div>
-
-    <div class="cards">
-
-        <!--card 1-->
-
-
-        <div class="card">
-            <div class="container">
-                <span class="card-title"><h3>Prizes and Goodies</h3></span>
-                <p class="cardinfo">Opportunity to take home prizes and swags worth <b>1.5Lac</b> sponsored by Estimote, JetBrains
-                    and The Souled Store.</p>
-            </div>
-        </div>
-
-
-        <!--card 2-->
-
-
-        <div class=card>
-            <div class="container">
-                <span class="card-title"><h3>Internship Opportunities</h3></span>
-                <p class="cardinfo">Connect with people in the industry while you build your product to grab internship
-                    offers.</p>
-            </div>
-        </div>
-
-
-        <!--card 3-->
-
-        <div class="card">
-            <div class="container">
-                <span class="card-title"><h3>Get Mentored </h3></span>
-                <p class="cardinfo">We've invited experts from the industry to help you build better.</p>
-            </div>
-        </div>
-
-
-    </div>
-
-
-    <!--<div class="card">-->
-    <!--<div class="card-image waves-effect waves-block waves-light">-->
-    <!--<img class="activator" src="img/img8.jpg">-->
-    <!--</div>-->
-    <!--<div class="card-content">-->
-    <!--<span class="card-title activator grey-text text-darken-4">Get Mentored</span>-->
-    <!--</div>-->
-    <!--<div class="card-reveal">-->
-    <!--<span class="card-title grey-text text-darken-4">Get Mentored</span>-->
-    <!--<p class = "cardinfo">We've invited experts from the industry to help you build your better</p>-->
-    <!--</div>-->
-    <!--</div>-->
-
-</div>
-
-<!-- Page 3 Sponcors -->
-<div class="page" id="partners">
-    <div id="PartnersTitle">
-        <iframe width="103%" height="100%" id="partnersframe"
-                src="https://dhishna.org/sponsors.html"
-                frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-
-        </iframe>
-    </div>
-</div>
-
-
-<!-- Page 4 Contact Us -->
-
-<div class="page" id="contactUs">
-    <div id="location">
-        <h2 id="contact2h">Contact Us</h2>
-    </div>
-    <div id="contact">
-        <div class="cardcontact">
-            <img src="contact/sid.jpg" class="contactimg">
-            <div class="container">
-                <span class="card-title"><h3>SIDDHARTH SHIVKUMAR </h3></span>
-                <p class="cardinfo">Contact Number: +918086601278<br>Email: siddharthshiv2798@gmail.com</p>
-
-            </div>
-        </div>
-
-
-        <div class="cardcontact">
-            <img src="contact/akul1.jpg" class="contactimg">
-            <div class="container">
-                <span class="card-title"><h3>AKUL SANTHOSH</h3></span>
-                <p class="cardinfo">Contact Number: +917012094615<br>Email: akul753@gmail.com</p>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="mapouter">
-        <div class="gmap_canvas">
-            <iframe width="106%" height="100%" id="gmap_canvas"
-                    src="https://maps.google.com/maps?q=Cochin+University+of+Science+and+Technology&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-
-            </iframe>
-            <a href="https://www.embedgooglemap.net">
-
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a class="portfolio-item">
+              <span class="caption">
+                <span class="caption-content">
+                  <h1>Prizes and Goodies</h1>
+                  <p class="mb-0">Opportunity to take home prizes and swags worth 1.5Lac.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/prizes.jpg" alt="">
             </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item">
+              <span class="caption">
+                <span class="caption-content">
+                  <h1>Internship Opportunities</h1>
+                  <p class="mb-0">Connect with people in the industry while you build your product to grab internship offers.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/intern.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item">
+              <span class="caption">
+                <span class="caption-content">
+                  <h1>Get Mentored</h1>
+                  <p class="mb-0">We've invited experts from the industry to help you build better.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/mentor.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item">
+              <span class="caption">
+                <span class="caption-content">
+                  <h1>Holistic Experience</h1>
+                  <p class="mb-0">Meet students from all over India and be exposed to a wide range of ideas.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/exper.jpg" alt="">
+            </a>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
+    </section>
+
+    <!-- Details -->
+    <section class="content-section bg-light" id="details">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>To Know More</h2>
+            <p class="lead mb-5">Schedule, Rules, Judging Criteria and more</p>
+            <a class="btn btn-dark btn-lg" target="_blank" href="https://drive.google.com/file/d/1-978bXQhXLhy72rOWOshlEso8-wuIbeI/view?usp=drivesdk">Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-<div id="particles-js"></div>
+    <!-- Final Callout -->
+    <section class="callout">
+      <div class="container text-center text-white">
+        <h2 class="mx-auto mb-5">What are
+          <em>you</em>
+          still waiting for?</h2>
+          <center>
+          <a href="https://www.instamojo.com/dhishna/make-o-tan-demo/" rel="im-checkout" data-behaviour="remote" data-style="flat" data-text="Register Now!" class="payment"></a>
+          </center>
+      </div>
+    </section>
 
-<script src="js/script.js" type="text/javascript"></script>
-<script src="js/scramble.js" type="text/babel"></script>
 
 
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9aXh75MJy7q_qGd-_irvNwiM8vR3Zfhk&callback=myMap">
-</script>
+    <!-- Sponsors -->
+    <section class="content-section bg-primary text-white" id="sponsors">
+      <div class="container text-center">
+        <h2 class="mb-4">Shoutout to our Sponsors</h2>
+        <a href="https://dhishna.org/sponsors" target="_blank" class="btn btn-xl btn-light mr-4">Check them out!</a>
+      </div>
+    </section>
+
+    <!--Contact -->
+    <section class="content-section bg-white text-black" id="contact">
+      <div class="container text-center">
+        <h1 class="mb-1">Contact Us</h1><br>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <img src="img/sid.jpg" class="contactimg">
+            <h2><br>Siddharth Shivkumar</h2>
+            <h3 class="mb-5">
+              <em>Phno: 7012742097<br></em>
+              <em class="small">siddharthshiv2798@gmail.com<br></em>
+            </h3>
+          </div>
+          <div class="col-lg-6">
+            <img src="img/akul1.jpg" class="contactimg">
+            <h2><br>Akul Santhosh</h2>
+            <h3 class="mb-5">
+              <em>Phno: 7012094615<br></em>
+              <em>akul753@gmail.com<br></em>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section id="map" class="map">
+      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.528202316353!2d76.3520514298044!3d10.055735174865017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c04e2534d9f%3A0x57a3a39e6b6b4514!2sKerala+Startup+Mission!5e0!3m2!1sen!2sin!4v1545684781355"></iframe>
+      <br/>
+      <small>
+        <a href="https://goo.gl/maps/3LWG9sQZgY32"></a>
+      </small>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <ul class="list-inline mb-5">
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/dhishna.cusat/">
+              <i class="icon-social-facebook"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/dhishna.cusat/">
+              <i class="icon-social-instagram"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white" href="https://www.youtube.com/channel/UCxa_SzyC6Ylv2M19RGVCArg">
+              <i class="icon-social-youtube"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="text-muted small mb-0">Copyright &copy; Dhishna 2019</p>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/all.js"></script>
 
 
-<script src = "js/navbar.js" type="text/javascript"></script>
-<script src = "js/page.js" type="text/javascript"></script>
 
-<script>
-    $(document).ready(function() { makeactive('navhome','#intro')});
-</script>
-</body>
+  </body>
+
 </html>
