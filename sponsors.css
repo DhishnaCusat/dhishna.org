@@ -16,6 +16,20 @@ body{
     width: 23.3vw;
 }
 
+
+#img_spacing {
+  margin-top: 3vw;
+  margin-bottom:3vw;
+  width: 30vw;
+}
+
+.bmw_img {
+  margin-top: 3vw;
+  margin-bottom:3vw;
+  width: 25vw;
+}
+
+
 #full-img{
     width: 20vw;
 }
@@ -173,6 +187,20 @@ spon-section2 h4{
         border-bottom: .2rem solid black;
 
         width: 56.3vw;
+    }
+
+    #img_spacing {
+      margin-top: 2vw;
+      margin-bottom:6vw;
+      margin-left: 12vw;
+      width: 50vw;
+    }
+
+    .bmw_img {
+      margin-top: 2vw;
+      margin-bottom:6vw;
+      margin-left: 12vw;
+      width: 35vw;
     }
 
     .alignment{
