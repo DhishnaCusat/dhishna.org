@@ -1,32 +1,10 @@
-.grid{
-    margin-bottom: 3vw;
-    top:15vw;
-
-    opacity:.8;
-
-    background-size: cover;
 
 
-}
-#mailtag{
-    color: turquoise;
-}
-.grid img{
-    position: absolute;
-    left: 35vw;
-    top:3.5vw;
+/*css for hexagon event svg-written */
 
-}
-.event-details{
 
-    height: 40vw!important;
-    overflow-y: scroll;
-    cursor: auto;
-
-   background-size: cover;
-
-    font-family:"Chalkboard SE";
-    font-weight: bolder;
+body{
+    overflow-y: scroll!important;
 
 }
 .events-sidepiece{
@@ -80,61 +58,86 @@
     width: 3.7vw;
 }
 
-.events-container{
-    width:90vw;
-    margin:auto;
-}
 
-.register-but{
-    padding: 2vw;
-}
-.register-but{
 
-    width: 5vw;
+
+
+/* style for events container and individual events*/
+
+.event-container{
+    width: 90vw;
     margin: 0 auto;
-    border-left: 4px solid gainsboro;
+    margin-top:16vw;
+
+
 }
+
+.event-container img{
+    width: 15vw;
+    margin: 1vw;
+}
+
+
+
+
+/*modal styles*/
+
+
+.modal-header{
+    color: black!important;
+    text-align: center;
+
+
+}
+.modal-body li,h3{
+    color: black!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .navbar-default .navbar-collapse, .navbar-default .navbar-form{
     border:none;
+}
+
+
+
+@media (max-width: 992px) {
+    .event-container{
+        overflow: hidden;
+        overflow-y: scroll!important;
+        margin-top: 50vw!important;
+
+    }
+
+    .event-container img {
+        text-align: center;
+        margin-bottom: 10vw;
+        width: auto;
+
+    }
+
 }
 
 
 @media only screen and (max-width: 767px)
 {
 
-    .aboutus-sidepiece{
-        top: 12vw!important;
-    }
-
-    .md-modal a{
-        width: 46vw;
-
-    }
-    .grid img{
-        width: 40vw;
-        left: -5vw;
-        top:3vw;
-
-    }
 
 
-    .events-container{
-        margin:auto;
-        text-align:center;
-        width:30vw;
-    }
+
     .nav.navbar-nav.navbar-right{
         background-color: black;
     }
-    .grid{
-        width: 100%!important;
-    }
-    .event-details{
 
-        height: 100vw!important;
-        overflow-y: scroll;
-
-    }
 
 
 }
