@@ -60,7 +60,7 @@ textarea {
 }
 
 .banner{
-    height: 43vw;
+    height: 36vw;
     background-image: url("images/randall-bruder-136626-unsplash.jpg");
    background-size: cover;
     
@@ -206,6 +206,10 @@ footer{
         width: 22vw;
         font-size: 4vw;
       
+    }
+    footer{
+        height: 14vw!important;
+
     }
     
 
