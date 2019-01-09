@@ -81,7 +81,7 @@ textarea {
     background-color: #080b0f;
     color: white;
     text-align: center;
-    height: 14vw;
+    height: 20vw;
 }
 .ques{
     font-size: 1.5vw;
@@ -167,7 +167,7 @@ footer{
     margin-bottom: 2vw;
 }
 
-.more {display: none;}
+#more {display: none;}
 .rounded-circle{
     width: 20vw!important;
 }
@@ -208,7 +208,7 @@ footer{
       
     }
     footer{
-        height: 14vw!important;
+        height: 20vw!important;
 
     }
     
