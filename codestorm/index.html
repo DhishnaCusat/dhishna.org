@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A 2 day programming challenge part of Dhishna 2019 ">
+    <meta name="author" content="Akul Santhosh">
+
+    <title>CodeStorm</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/all.css" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-database.js"></script>
+    <script src = "js/relocation.js" type="text/javascript"></script>
+
+</head>
+
+<body id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="https://dhishna.org/eventspage.html"><img src="img/dhishna.png"
+                                                                                                  class="img-fluid sizing"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+            <h1 class="mx-auto my-0 text-uppercase">CodeStorm</h1>
+            <h2 class="text-white-50 mx-auto mt-2 mb-5">Its a programming competition.</h2>
+            <center>
+                <a class="btn btn-light btn-lg" data-behaviour="remote"
+                        data-style="flat" data-text="Register" onclick="pay()" >
+                    Register
+                </a>
+            </center>
+        </div>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="about-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="text-white mb-4">What can you expect?</h2>
+                <p class="text-white-50">Do you spend hours turning caffeine to code? <br>If yes, it is time!<br>
+                    All those passionate programmers out there,<br> pack your gear and join in!<br>
+                    Code Storm presents an exciting 2-day programming competition <br>to rack your brain and bring out
+                    the programmer in you.<br>
+                    Filled with elegant questions and exciting prizes.<br>
+                    It is the biggest of its kind in Kochi and we hope you will be there.
+                    <br><br>Date: 2-3 Feb<br>Venue: Computer Centre, Cusat
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="Prizes" class="projects-section bg-light">
+    <div class="container">
+        <div class="text-center mx-auto">
+            <h2 class="text-black mb-4">Whats up for grabs?</h2>
+        </div>
+        <!-- Prizes and Goodies -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+            <div class="col-lg-6">
+                <img class="img-fluid" src="img/prize.jpeg" alt="">
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                            <h4 class="text-white">Cash Prize</h4>
+                            <p class="mb-0 text-white-50">Opportunity to take home prizes worth 35K</p>
+                            <hr class="d-none d-lg-block mb-0 ml-0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Two Row -->
+        <div class="row justify-content-center no-gutters">
+            <div class="col-lg-6">
+                <img class="img-fluid" src="img/goodies.jpeg" alt="">
+            </div>
+            <div class="col-lg-6 order-lg-first">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                            <h4 class="text-white">Goodies</h4>
+                            <p class="mb-0 text-white-50">Finalists take home goodies and swags!</p>
+                            <hr class="d-none d-lg-block mb-0 mr-0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="text-center text-black bg-light" id="schedule">
+    <div class="container text-center">
+        <h2 class="mb-4">To Know More</h2>
+        <p class="lead mb-5">Schedule, Rules, Judging Criteria and more</p>
+        <a class="btn btn-dark btn-lg" target="_blank"
+           href="https://drive.google.com/file/d/1NbfGQ4lnKOCUA2cF9uMLfNAu9HtOeeL9/view?usp=sharing">Details</a>
+    </div>
+</section>
+
+
+<section class="projects-section text-center text-black bg-light" id="sponsors">
+    <div class="container text-center">
+        <h2 class="mb-4">Title Sponsor</h2>
+        <div class="row">
+        </div>
+</section>
+
+<!-- Signup Section -->
+<section class="signup-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto text-center">
+                <h2 class="text-white mb-5">What are
+                    <em>you</em>
+                    still waiting for?</h2>
+                <center>
+                    <a class="btn btn-light btn-lg" data-behaviour="remote"
+                       data-style="flat" data-text="Register" onclick="pay()">
+                        Register
+                    </a>
+                </center>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section bg-black">
+
+    <div class="container">
+        <h2 class="mb-4 text-white text-center">Contact Us</h2>
+        <div class="row">
+
+            <div class="col box">
+                <div class="card py-4 h-100 text-center text-white">
+                    <div class="card-body">
+                        <img src="img/akul1.jpg" class="contactimg">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-uppercase m-0">Akul Santhosh</h4>
+                        <h5 class="m-0">Phno:7012094615<br>akul753@gmail.com</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col box">
+                <div class="card py-4 h-100 text-center text-white">
+                    <div class="card-body">
+                        <img src="img/sahil.jpg" class="contactimg">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-uppercase m-0">Sahil Athrij</h4>
+                        <h5 class="m-0">Phno:7994203745<br>sahilathrij@gmail.com</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="map">
+    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.652200873045!2d76.32267155093822!3d10.045531774968243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c36c8fa7c3b%3A0xc72d68ab6e11de79!2sComputer+centre!5e0!3m2!1sen!2sin!4v1545985307993"></iframe>
+    <br/>
+    <small>
+        <a href="https://goo.gl/maps/3LWG9sQZgY32"></a>
+    </small>
+</div>
+
+<section class="contact-section bg-black">
+    <div class="container">
+        <div class="social d-flex justify-content-center">
+            <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/dhishna.cusat/">
+                <i class="icon-social-facebook"></i>
+            </a>
+            <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/dhishna.cusat/">
+                <i class="icon-social-instagram"></i>
+            </a>
+            <a class="social-link rounded-circle text-white"
+               href="https://www.youtube.com/channel/UCxa_SzyC6Ylv2M19RGVCArg">
+                <i class="icon-social-youtube"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black small text-center text-white-50">
+    <div class="container">
+        Copyright &copy; Dhishna 2019
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/all.js"></script>
+
+</body>
+
+</html>
