@@ -187,19 +187,23 @@ footer{
         width: 50vw;
 
     }
+    .description {
+        height: 50vw;
+    }
+    .description h1{
+        font-size: 9vw;
+    }
     .sponsors h1{
         margin-top: 260vw;
+
     }
     #intro {
         margin-top: 9vw;
-        height: 39vw;
+        height: 80vw;
 
     }
-    .description {
-        height: 29vw;
-    }
     #intro p {
-        font-size: 2.5vw;
+        font-size: 5vw;
     }
     .but-1{
    
