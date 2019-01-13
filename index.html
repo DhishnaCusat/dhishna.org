@@ -12,13 +12,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-    <link rel="stylesheet" href="aboutus.css">
-    <link rel="stylesheet" href="mobilehome.css">
+    <link rel="stylesheet" href="aboutus/aboutus.css">
+    <link rel="stylesheet" href=" mobilehome.css">
     <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico'>
-
-
-
-
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
@@ -27,8 +23,6 @@
 
     <script src="gsap.js"> </script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-
-
 
 
 </head>
@@ -70,15 +64,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><img src="images/logo3.svg"></a>
+            <a class="logo" href=""><img src="images/logo3.svg"></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="aboutus.html">ABOUT US</a></li>
-                <li><a href="eventspage.html">EVENTS</a></li>
-                <li><a href="contactus.html">CONTACT</a></li>
-                <li><a href="sponsors.html">SPONSORS</a></li>
+                <li><a href="">HOME</a></li>
+                <li><a href="aboutus">ABOUT US</a></li>
+                <li><a href="events">EVENTS</a></li>
+                <li><a href="contact">CONTACT</a></li>
+                <li><a href="sponsors">SPONSORS</a></li>
+                <li><a href="user">USER</a></li>
 
             </ul>
         </div>
@@ -87,21 +82,19 @@
 
 
 <!--Destop version code-->
-
-
 <div class="obj1">
 
         <img class="size-d height-animation" src="images/Untitled-15.svg">
 
         <img class="size-h height-animation" src="images/Untitled-16.svg">
 
-        <img class="size-i height-animation " src="images/Letter-I%20(1).svg">
+        <img class="size-i height-animation " src="images/Letter-I.svg">
 
-        <img class="size-s  height-animation" src="images/Letter-S%20(1).svg">
+        <img class="size-s  height-animation" src="images/Letter-S.svg">
         <img class="size-h2  height-animation" src="images/hh.svg">
-        <img class="size-n height-animation" src="images/Letter-N%20(1).svg" >
+        <img class="size-n height-animation" src="images/Letter-N.svg" >
 
-        <img class="size-a  height-animation" src="images/Letter-A%20(1).svg">
+        <img class="size-a  height-animation" src="images/Letter-A.svg">
 
         <div class="coverup"></div>
         <div class="coverup-year"></div>
@@ -228,7 +221,7 @@
                         output += from
                     }
                 }
-                this.el.innerHTML = output
+                this.el.innerHTML = output;
                 if (complete === this.queue.length) {
                     this.resolve()
                 } else {
@@ -252,18 +245,18 @@
             'Dhishna 2019',
             'at SOE CUSAT',
 
-        ]
+        ];
 
-        const el = document.querySelector('.text')
-        const fx = new TextScramble(el)
+        const el = document.querySelector('.text');
+        const fx = new TextScramble(el);
 
-        let counter = 0
+        let counter = 0;
         const next = () => {
             fx.setText(phrases[counter]).then(() => {
                 setTimeout(next, 600)
-            })
+            });
             counter = (counter + 1) % phrases.length
-        }
+        };
 
         next()
     </script>

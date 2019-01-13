@@ -1,0 +1,48 @@
+#loading{
+    margin-top: 20vw;
+    margin-left: 43vw;
+
+}
+
+.ind-events{
+    height: 10vw;
+    letter-spacing: .1vw;
+    text-align: center;
+    margin-top: 13vw;
+    width: 27vw!important;
+
+
+
+
+}
+
+
+
+.container{
+    margin-top: 0vw;
+    width: 90vw!important;
+    margin-left: auto;
+
+}
+
+@media only screen and (max-width: 767px)
+{
+    .ind-events{
+      height: 45vw;
+        margin-top: 21vw;
+        width: 86vw !important;
+
+    }
+    .container {
+        margin-top: 14vw;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 767px)
+{
+
+
+}

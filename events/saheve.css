@@ -1,0 +1,64 @@
+#loading{
+    margin-top: 20vw;
+    margin-left: 43vw;
+
+}
+
+
+.height-adjust{
+    height: 10vw;
+}
+@media only screen and (max-width: 767px)
+{
+    .container{
+        margin-top: 45vw;
+
+    }
+    .height-adjust{
+        height: 30vw;
+    }
+}
+
+
+
+
+.ind-events{
+    height: 5vw;
+    letter-spacing: .1vw;
+    text-align: center;
+    margin-top: 15vw;
+    width: 27vw!important;
+
+
+
+
+}
+
+
+.container{
+    width: 90vw!important;
+    margin-left: auto;
+
+}
+
+@media only screen and (max-width: 767px)
+{
+    .ind-events{
+        height: 45vw;
+        margin-top: 20vw;
+        width: 86vw !important;
+
+    }
+    .container {
+        margin-top: 16vw;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 767px)
+{
+
+
+}

@@ -1,6 +1,7 @@
 
 body{
     background-color:"#252527";
+    overflow: scroll!important;
 
 
 }
@@ -92,14 +93,6 @@ body{
     left: 46.7vw;
 
 
-}
-.logo{
-    position: absolute;
-    width: 6vw;
-
-    left:-6vw;
-  margin-top: 0vw!important;
-   
 }
 
 

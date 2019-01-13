@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-database.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DHISHNA</title>
+
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="../gsap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../aboutus/aboutus.css">
+    <link rel="stylesheet" href="userpage.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/default.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/component.css"/>
+
+
+
+
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="logo" href="../"><img src="../images/logo3.svg"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../">HOME</a></li>
+                <li><a href="../aboutus">ABOUT US</a></li>
+                <li><a href="../events">EVENTS</a></li>
+                <li><a href="../contact">CONTACT</a></li>
+                <li><a href="../sponsors">SPONSORS</a></li>
+                <li><a href="../user">USER</a></li>
+
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--navbar ends-->
+<div id="loading">
+    <img src="../images/Gear.svg">
+
+</div>
+
+<div class="container reg-events">
+    <h2 id="name">Hi</h2>
+    <table class="table table-hover" id="usertable">
+        <thead>
+        <tr>
+            <th>Event</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <button style="background-color: #bd2130" onclick="signout()">SIGNOUT</button>
+
+</div>
+
+<script src="users.js"></script>
+
+</body>
+</html>

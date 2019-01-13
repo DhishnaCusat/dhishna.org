@@ -1,0 +1,149 @@
+
+
+/*css for hexagon event svg-written */
+
+
+body{
+    overflow-y: scroll!important;
+
+}
+.events-sidepiece{
+    position: absolute;
+    width: 7vw;
+    top: 13vw;
+    left: 67vw;
+}
+
+
+
+.events-orange-block{
+    position: absolute;
+    top:13vw;
+    width: 8vw;
+
+    left: 26vw;
+}
+.events-letters{
+    width: 4vw;
+    position: absolute;
+    top:8vw;
+    margin-top: 1vw;
+}
+.events-e{
+    top:8vw;
+    left: 37vw;
+    width: 3.3vw!important;
+}
+.events-v{
+
+    left: 41vw;
+    width: 4.3vw;
+}
+.events-e2{
+
+    left: 46vw;
+    width: 3.3vw!important;
+
+}.events-n{
+
+     left: 51vw;
+ }
+.events-t{
+
+    left: 56vw;
+}
+.events-s{
+
+    left: 61vw;
+    width: 3.7vw;
+}
+
+
+
+
+
+/* style for events container and individual events*/
+
+.event-container{
+    width: 90vw;
+    margin: 0 auto;
+
+
+}
+
+.event-container img{
+    width: 15vw;
+    margin: 1vw;
+}
+
+
+
+
+/*modal styles*/
+
+
+.modal-header{
+    color: black!important;
+    text-align: center;
+
+
+}
+.modal-body li,h3{
+    color: black!important;
+}
+
+.event-branches{
+    margin-top: 2vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    border:none;
+}
+
+
+
+@media (max-width: 992px) {
+    .event-container{
+        overflow: hidden;
+        overflow-y: scroll!important;
+        margin-top: 50vw!important;
+
+    }
+
+    .event-container img {
+        text-align: center;
+        margin-bottom: 10vw;
+        width: auto;
+
+    }
+
+}
+
+
+@media only screen and (max-width: 767px)
+{
+
+
+
+
+    .nav.navbar-nav.navbar-right{
+        background-color: black;
+    }
+    .event-branches{
+        /*margin-top: 90vw;*/
+    }
+
+
+
+
+}

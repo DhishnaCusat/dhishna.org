@@ -1,0 +1,176 @@
+body{
+background-color: #252527!important;
+
+}
+.about{
+
+    position:relative;
+
+}
+.logo{
+    position: absolute;
+    width: 4vw;
+left: 2vw;
+
+    margin-top: 0vw!important;
+
+}
+
+#about-dhishna{
+    opacity: 0;
+    text-align: left;
+}
+.about-arrow{
+    position: absolute;
+    width: 4vw;
+    top:40vw;
+    left: 50vw;
+}
+.about p{
+    position: absolute!important;
+    top:25vw;
+    left: 35vw;
+    text-align: center;
+    font-size: 1.3vw;
+    color: white;
+    letter-spacing: .1em;
+
+
+}
+.orange-piece-aboutus{
+    width: 6vw;
+    height: 1.7vw!important;
+    position: absolute;
+    top:26vw;
+    left: 25vw;
+}
+.orange-piece-aboutus-2{
+    width: 2vw;
+    position: absolute;
+    bottom: 10vw;
+    left:40vw;
+}
+
+.aboutus-sidepiece{
+    position: absolute;
+    width: 7vw;
+    top:33vw;
+    left: 70vw;
+}
+.about-letters{
+    position: absolute;
+    width: 3vw;
+    top:16vw;
+}
+.about-letters-a{
+    left: 17vw;
+    width: 3.8vw!important;
+}
+.about-letters-b{
+    left: 21.3vw;
+}
+.about-letters-o{
+    left: 25.6vw;
+}
+.about-letters-u{
+    left: 29.9vw;
+
+}
+.about-letters-t{
+    left: 33.2vw;
+
+ }
+
+.about-letters-u2{
+    left: 37.5vw;
+
+}
+.about-letters-s{
+    left: 41.8vw;
+
+}
+.hex-center{
+    width: 18vw;
+    opacity: 0;
+    position: absolute;
+    top: 17vw;
+    left: 41vw;
+    z-index: -9999;
+}
+
+.bubble{
+    width: 41.5vw;
+    position: absolute;
+    z-index: -333;
+    top: 9.5vw;
+    left: 29vw;
+    opacity: 0;
+
+    animation: rotate 90s linear  1 alternate;
+}
+
+
+.gallery{
+    margin-top: 30vw;
+}
+footer{
+    position: absolute;
+    bottom:0vw;
+    height: 4vw;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    width: 100vw;
+    background-color: rgb(51,50,53);
+ text-align: right;
+}
+.brand-name{
+    width: 14vw;
+    text-align: center;
+    position: absolute;
+    left: 46vw;
+    bottom: 1vw;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+
+/* The element to apply the animation to */
+.bubble{
+
+    animation-name: rotate;
+
+}
+@media only screen and (max-width: 767px)
+{
+    .about{
+       margin-top: 25vw;
+    }
+    #about-dhishna{
+        font-size: 2vw;
+    }
+    .aboutus-sidepiece{
+        top: 32vw !important;
+        left: 72vw;
+
+    }
+
+    .nav.navbar-nav.navbar-right{
+        background-color: black;
+    }
+    .brand-name{
+        width: 25vw;
+
+    left: 37vw;
+    bottom: 1vw;
+    height: 9vw;
+    }
+
+}

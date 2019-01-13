@@ -1,0 +1,26 @@
+.container{
+    margin-top: 5vw;
+}
+.nav-tabs>li>a{
+    color: #bd2130!important;
+    letter-spacing: .1vw;
+    font-weight: 900;
+}
+button{
+ background-color: #bd2130;
+    padding: 1vw;
+    border-color: black;
+}
+#org1-img{
+    width: 20vw;
+    border-radius: 100%;
+}
+#org2-img{
+    width: 20vw;
+    border-radius: 100%;
+}
+#loading{
+    margin-top: 20vw;
+    margin-left: 43vw;
+
+}
