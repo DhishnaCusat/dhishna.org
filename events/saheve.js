@@ -17,57 +17,75 @@ function putindiv() {
     var database = firebase.database().ref().child('events/');
     number = 0;
 
-    var storage = firebase.storage();
-
-    database.once('value', function (snap) {
-        snap.forEach(function (snapshot) {
-            var div = document.createElement('a');
-            div.setAttribute("class", "col-lg-4 ind-events col-xs-12 ");
-            div.id = snapshot.key;
-            div.setAttribute("href", "branch/?branch="+snapshot.key);
-
-            if(snapshot.key === "co" || snapshot.key === "pre" || snapshot.key === "ws"){
-                tp.appendChild(div)
-            }
-            else if (snapshot.key==="acc"){ //edit this for full events
-                number += 1;
-                branches.appendChild(div);
-                if (number === 3) {
-                    number = 0;
-                    box.appendChild(branches);
-                    branches = document.createElement("div");
-                    branches.setAttribute("class", "row sec-container");
-
-                }
-            }
-            var im = document.createElement('img');
-            im.setAttribute("href", "/branch/?branch="+snapshot.key);
-            img = localStorage.getItem(snapshot.key);
-            console.log(img);
-            if(img){
-                im.src = img;
-            }
-            else {
-                storage.ref('events/' + snapshot.key + "/branch.svg").getDownloadURL().then(function (url) {
-                    // `url` is the download URL for 'images/stars.jpg'
-                    // This can be downloaded directly:
-                    // Or inserted into an <img> element:
-                    console.log("hello");
-                    im.src = url;
-                    localStorage.setItem(snapshot.key, url);
-                }).catch(function (error) {
-                    console.log(error)
-                    // Handle any errors
-                });
-            }
-            div.appendChild(im)
-        });
+    storage = firebase.storage();
+    var sn = localStorage.getItem("events");
+    if(sn){
+        snap = JSON.parse(sn);
+        console.log(snap);
+        putdata(snap)
         box.appendChild(branches);
-    }).then(function () {
-        load = document.getElementById("loading")
+        load = document.getElementById("loading");
         load.parentNode.removeChild(load);
+    }
+    else {
+        database.once('value', function (snap) {
+            localStorage.setItem("events", JSON.stringify(snap));
+            console.log(JSON.stringify(snap));
+            putdata(snap.val());
+            box.appendChild(branches);
+        }).then(function () {
+            load = document.getElementById("loading");
+            load.parentNode.removeChild(load);
 
-    })
-    ;
+        })
+        ;
+    }
+}
+
+function putdata(snap){
+    Object.keys(snap).forEach(function (snapshot) {
+        var div = document.createElement('a');
+        console.log(snapshot)
+        div.setAttribute("class", "col-lg-4 ind-events col-xs-12 ");
+        div.id = snapshot;
+        div.setAttribute("href", "branch/?branch="+snapshot);
+
+        if(snapshot === "co" || snapshot === "pre" || snapshot === "ws"){
+            tp.appendChild(div)
+        }
+        else if (snapshot==="acc"){ //edit this for full events
+            number += 1;
+            branches.appendChild(div);
+            if (number === 3) {
+                number = 0;
+                box.appendChild(branches);
+                branches = document.createElement("div");
+                branches.setAttribute("class", "row sec-container");
+
+            }
+        }
+        var im = document.createElement('img');
+        im.setAttribute("href", "/branch/?branch="+snapshot);
+        img = localStorage.getItem(snapshot);
+        console.log(img);
+        if(img){
+            im.src = img;
+        }
+        else {
+            storage.ref('events/' + snapshot + "/branch.svg").getDownloadURL().then(function (url) {
+                // `url` is the download URL for 'images/stars.jpg'
+                // This can be downloaded directly:
+                // Or inserted into an <img> element:
+                console.log("hello");
+                im.src = url;
+                localStorage.setItem(snapshot, url);
+            }).catch(function (error) {
+                console.log(error)
+                // Handle any errors
+            });
+        }
+        div.appendChild(im)
+    });
 
 }
+
