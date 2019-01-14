@@ -28,7 +28,17 @@ button{
 
 
 @media only screen and (max-width: 767px)
+
 {
+    #org1-img{
+        width: 40vw;
+    }
+    #org2-img{
+        width: 40vw;
+    }
+    .nav-tabs{
+        margin-top: 6vw ;
+    }
     .loading{
         margin-left: 25vw;
         width:50vw
