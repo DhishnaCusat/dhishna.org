@@ -22,10 +22,14 @@ function putindiv() {
     if(sn){
         snap = JSON.parse(sn);
         console.log(snap);
-        putdata(snap)
+        putdata(snap);
         box.appendChild(branches);
         load = document.getElementById("loading");
         load.parentNode.removeChild(load);
+
+        database.once('value', function (snap) {
+            localStorage.setItem("events", JSON.stringify(snap));
+        })
     }
     else {
         database.once('value', function (snap) {
@@ -34,9 +38,7 @@ function putindiv() {
             putdata(snap.val());
             box.appendChild(branches);
 
-            database.once('value', function (snap) {
-                localStorage.setItem("events", JSON.stringify(snap));
-            })
+
 
         }).then(function () {
             load = document.getElementById("loading");
@@ -50,7 +52,7 @@ function putindiv() {
 function putdata(snap){
     Object.keys(snap).forEach(function (snapshot) {
         var div = document.createElement('a');
-        console.log(snapshot)
+        console.log(snapshot);
         div.setAttribute("class", "col-lg-4 ind-events col-xs-12 ");
         div.id = snapshot;
         div.setAttribute("href", "branch/?branch="+snapshot);

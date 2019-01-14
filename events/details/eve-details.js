@@ -9,65 +9,73 @@ var config = {
 firebase.initializeApp(config);
 
 function showdetails(branch, event) {
-    var database = firebase.database().ref().child('events/' + branch + '/' + event);
-    var det = document.getElementById('detail-content');
-    var rul = document.getElementById('rules-content');
-    var cap = document.getElementById('eve-caption');
-    var fee = document.getElementById('eve-fee');
-    var on1 = document.getElementById('org1-name');
-    var op1 = document.getElementById('org1-ph');
-    var on2 = document.getElementById('org2-name');
-    var op2 = document.getElementById('org2-ph');
-    var storage = firebase.storage();
-    database.once('value', function (snap) {
-        document.getElementById('eve-name').innerHTML = event;
-        cap.innerHTML = snap.val().caption;
-        det.innerText = snap.val().description;
-        rul.innerText = snap.val().rules;
-        fee.innerHTML = "REGISTRATION FEE: " + snap.val().fee;
-        on1.innerHTML = snap.val().coordinators.crd1.name;
-        op1.innerHTML = snap.val().coordinators.crd1.number;
-        on2.innerHTML = snap.val().coordinators.crd2.name;
-        op2.innerHTML = snap.val().coordinators.crd2.number;
-        insta_link = snap.val().insta;
-        if (!insta_link){
-            reg = document.getElementById("registerbtn");
-            reg.parentNode.removeChild(reg);
-            fee.parentNode.removeChild(fee);
-        }
-        storage.ref('events/' + branch + "/" + event + "/cr1.jpg").getDownloadURL().then(function (url) {
-            // `url` is the download URL for 'images/stars.jpg'
-
-            // This can be downloaded directly:
-
-            // Or inserted into an <img> element:
-            console.log(url);
-            var org = document.getElementById('org1-img');
-            org.src = url;
-        }).catch(function (error) {
-            console.log(error)
-            // Handle any errors
-        });
-        storage.ref('events/' + branch + "/" + event + "/crd2.jpg").getDownloadURL().then(function (url) {
-            // `url` is the download URL for 'images/stars.jpg'
-
-            // This can be downloaded directly:
-
-            // Or inserted into an <img> element:
-            console.log(url);
-            var org = document.getElementById('org2-img');
-            org.src = url;
-        }).catch(function (error) {
-            console.log(error)
-            // Handle any errors
-        });
-    }).then(function () {
-        load = document.getElementById("loading")
+    var database = firebase.database().ref().child('events/');
+    det = document.getElementById('detail-content');
+    rul = document.getElementById('rules-content');
+    cap = document.getElementById('eve-caption');
+    fee = document.getElementById('eve-fee');
+    on1 = document.getElementById('org1-name');
+    op1 = document.getElementById('org1-ph');
+    on2 = document.getElementById('org2-name');
+    op2 = document.getElementById('org2-ph');
+    storage = firebase.storage();
+    var sn = localStorage.getItem("events");
+    if(sn){
+        snap = JSON.parse(sn);
+        console.log(snap);
+        getdetails(snap[branch][event]);
+        load = document.getElementById("loading");
         load.parentNode.removeChild(load);
 
+        database.once('value', function (snap) {
+            localStorage.setItem("events", JSON.stringify(snap));
+        })
+    }
+    else {
+        database.once('value', function (snap) {
+            getdetails(snap.val()[branch][event])
+
+        }).then(function () {
+            load = document.getElementById("loading");
+            load.parentNode.removeChild(load);
+
+        });
+    }
+
+}
+function getdetails(snap) {
+    document.getElementById('eve-name').innerHTML = event;
+    cap.innerHTML = snap.caption;
+    det.innerText = snap.description;
+    rul.innerText = snap.rules;
+    fee.innerHTML = "REGISTRATION FEE: " + snap.fee;
+    on1.innerHTML = snap.coordinators.crd1.name;
+    op1.innerHTML = snap.coordinators.crd1.number;
+    on2.innerHTML = snap.coordinators.crd2.name;
+    op2.innerHTML = snap.coordinators.crd2.number;
+    insta_link = snap.insta;
+    if (!insta_link){
+        reg = document.getElementById("registerbtn");
+        reg.parentNode.removeChild(reg);
+        fee.parentNode.removeChild(fee);
+    }
+    storage.ref('events/' + branch + "/" + event + "/cr1.jpg").getDownloadURL().then(function (url) {
+
+        console.log(url);
+        var org = document.getElementById('org1-img');
+        org.src = url;
+    }).catch(function (error) {
+        console.log(error)
+        // Handle any errors
     });
-
-
+    storage.ref('events/' + branch + "/" + event + "/crd2.jpg").getDownloadURL().then(function (url) {
+        console.log(url);
+        var org = document.getElementById('org2-img');
+        org.src = url;
+    }).catch(function (error) {
+        console.log(error)
+        // Handle any errors
+    });
 }
 
 function pay() {
