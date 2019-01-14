@@ -19,8 +19,21 @@ button{
     width: 20vw;
     border-radius: 100%;
 }
-#loading{
-    margin-top: 20vw;
-    margin-left: 43vw;
+.loading{
+
+    margin-left: 41vw;
+    width:20vw
+
+}
+
+
+@media only screen and (max-width: 767px)
+{
+    .loading{
+        margin-left: 25vw;
+        width:50vw
+
+    }
+
 
 }
