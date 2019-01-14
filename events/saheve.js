@@ -33,6 +33,11 @@ function putindiv() {
             console.log(JSON.stringify(snap));
             putdata(snap.val());
             box.appendChild(branches);
+
+            database.once('value', function (snap) {
+                localStorage.setItem("events", JSON.stringify(snap));
+            })
+
         }).then(function () {
             load = document.getElementById("loading");
             load.parentNode.removeChild(load);
