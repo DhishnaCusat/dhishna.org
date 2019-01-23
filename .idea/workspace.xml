@@ -47,7 +47,7 @@
       <file leaf-file-name="eve-details.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/events/details/eve-details.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="357">
               <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
             </state>
           </provider>
@@ -167,7 +167,7 @@
       <path value="$PROJECT_DIR$/make-a-ton/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-29" />
     <option name="y" value="-8" />
     <option name="width" value="1258" />
@@ -264,15 +264,15 @@
       <workItem from="1547479252891" duration="6758000" />
       <workItem from="1548180458527" duration="627000" />
       <workItem from="1548208443662" duration="3340000" />
-      <workItem from="1548254295542" duration="2618000" />
+      <workItem from="1548254295542" duration="3297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40377000" />
+    <option name="totallyTimeSpent" value="41056000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.130625" />
@@ -510,7 +510,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/events/details/eve-details.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="357">
           <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
         </state>
       </provider>
