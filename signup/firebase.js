@@ -48,7 +48,14 @@ function createuser() {
             }).then(function () {
                 // write what happens after registration is compete
                 alert("registration succesfull");
-                // document.location = "../"
+                branch = localStorage.getItem("branch");
+                event = localStorage.getItem("event");
+                if (branch && event) {
+                    document.location = "../events/details/?branch="+branch+"&event="+event;
+                }
+                else {
+                    document.location = "../events/"
+                }
 
 
             });
@@ -79,7 +86,14 @@ function loguser() {
     var email = document.getElementById("emailin").value;
     var password = document.getElementById("passwordin").value;
     firebase.auth().signInWithEmailAndPassword(email, password).then(function () {
-        window.location = "../index.html"
+        branch = localStorage.getItem("branch");
+        event = localStorage.getItem("event");
+        if (branch && event) {
+            document.location = "../events/details/?branch="+branch+"&event="+event;
+        }
+        else {
+            document.location = "../events/"
+        }
     }).catch(function (error) {
 
         var errorCode = error.code;
@@ -120,12 +134,15 @@ function forget() {
 
 firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
-        user.providerData.forEach(function (profile) {
-            console.log(profile.email)
-        })
-        // document.location = "../"
+        branch = localStorage.getItem("branch");
+        event = localStorage.getItem("event");
+        if (branch && event) {
+            document.location = "../events/details/?branch="+branch+"&event="+event;
+        }
+        else {
+            document.location = "../events/"
+        }
     }
-
     else {
     }
 });

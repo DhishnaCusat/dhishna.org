@@ -74,10 +74,16 @@
             <h1 class="mx-auto my-0 text-uppercase">CodeStorm</h1>
             <h2 class="text-white-50 mx-auto mt-2 mb-5">Its a programming competition.</h2>
             <center>
-                <a class="btn btn-light btn-lg" data-behaviour="remote"
-                        data-style="flat" data-text="Register" onclick="pay()" >
-                    Register
-                </a>
+                <div style="display: none" id="payment">
+                    <a href="" rel="im-checkout" data-behaviour="remote" data-style="flat" data-text="buy tickets"></a>
+                </div>
+
+                <div>
+                    <div id="redirect" onclick="changelocataion()">
+                        <a rel="im-checkout" data-behaviour="remote" data-style="flat-dark" data-text="buy tickets"
+                           onclick="changelocataion()"></a>
+                    </div>
+                </div>
             </center>
         </div>
     </div>
@@ -261,7 +267,7 @@
 
 <!-- Custom scripts for this template -->
 <script src="js/all.js"></script>
-
+<script src="https://js.instamojo.com/v1/button.js"></script>
 </body>
 
 </html>

@@ -71,11 +71,18 @@
             <h1 id="eve-name"></h1>
             <h3 id="eve-caption"></h3>
             <p id="detail-content"></p>
-            <p id="eve-fee"></p>
-
-            <div style="display: none" id = "payment">
-            <a href="" rel="im-checkout"  data-behaviour="remote" data-style="flat" data-text="buy tickets"></a>
+            <p id="eve-fee">
+            <div style="display: none" id="payment">
+                <a href="" rel="im-checkout" data-behaviour="remote" data-style="flat" data-text="buy tickets"></a>
             </div>
+
+            <div>
+                <div id="redirect" onclick="changelocataion()">
+                    <a rel="im-checkout" data-behaviour="remote" data-style="flat-dark" data-text="buy tickets"
+                       onclick="changelocataion()"></a>
+                </div>
+            </div>
+
         </div>
 
         <div id="rules" class="tab-pane fade">
