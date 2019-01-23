@@ -55,7 +55,7 @@ function getdetails(snap) {
     op2.innerHTML = snap.coordinators.crd2.number;
     insta_link = snap.insta;
     if (!insta_link){
-        reg = document.getElementById("registerbtn");
+        reg = document.getElementById("payment");
         reg.parentNode.removeChild(reg);
         fee.parentNode.removeChild(fee);
     }
@@ -80,28 +80,31 @@ function getdetails(snap) {
 
 function pay() {
     firebase.auth().onAuthStateChanged(function (user) {
-        // if (user) {
-        //     firebase.database().ref('/events/' + branch + '/' + event).once('value').then(function (snapshot) {
-        //         eve = snapshot.val();
-        //         insta_link = eve.insta;
-        //         insta_link += "?data_name=";
-        //         uuid = user.uid;
-        //         insta_link += uuid;
-        //         insta_link += "&data_readonly=data_name";
-        //         document.location = insta_link;
-        //
-        //
-        //     });
-        // }
-        // else {
-        //     document.location = "../../signup"
-        // }
-        firebase.database().ref('/events/' + branch + '/' + event).once('value').then(function (snapshot) {
-            eve = snapshot.val();
-            insta_link = eve.insta;
-            console.log(insta_link)
-            document.location = insta_link;
+        if (user) {
+            firebase.database().ref('/events/' + branch + '/' + event).once('value').then(function (snapshot) {
+                eve = snapshot.val();
+                insta_link = eve.insta;
+                field= eve.insta_uid;
+                insta_link += "?data_"+field+"=";
+                uuid = user.uid;
+                insta_link += uuid;
+                insta_link += "&data_readonly=data_"+field;
+                button = document.getElementsByClassName("im-checkout-btn")[0];
+                di = document.getElementById("payment");
+                console.log(button);
+                button.href= insta_link;
+                di.style.display="block";
 
-        });
+
+            });
+        }
+        else {
+            document.location = "../../signup"
+        }
+
     });
 }
+document.addEventListener("DOMContentLoaded", function(event) {
+    //do work
+    pay()
+});

@@ -14,7 +14,7 @@ var database = firebase.database();
 function SwapDivsWithClick(div1, div2) {
     d1 = document.getElementById(div1);
     d2 = document.getElementById(div2);
-    if (d2.style.display == "none") {
+    if (d2.style.display === "none") {
         d1.style.display = "none";
         d2.style.display = "block";
     }
@@ -39,7 +39,7 @@ function createuser() {
         user = firebase.auth().currentUser;
         if (user) {
             var userId = user.uid;
-            database.ref('users/' + email).update({
+            database.ref('users/' + userId).update({
                 name: name,
                 email: email,
                 college: college,

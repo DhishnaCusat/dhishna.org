@@ -60,7 +60,7 @@ function putdata(snap){
         if(snapshot === "co" || snapshot === "pre" || snapshot === "ws"){
             tp.appendChild(div)
         }
-        else if (snapshot==="acc"){ //edit this for full events
+        else { //edit this for full events
             number += 1;
             branches.appendChild(div);
             if (number === 3) {

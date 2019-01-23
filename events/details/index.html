@@ -28,6 +28,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
     <link rel="stylesheet" href="eve-details.css">
+    <script src="eve-details.js" type="text/javascript"></script>
 
 </head>
 <body>
@@ -72,7 +73,9 @@
             <p id="detail-content"></p>
             <p id="eve-fee"></p>
 
-            <button style="margin: 2vw" onclick="pay()" id = "registerbtn">REGISTER</button>
+            <div style="display: none" id = "payment">
+            <a href="" rel="im-checkout"  data-behaviour="remote" data-style="flat" data-text="buy tickets"></a>
+            </div>
         </div>
 
         <div id="rules" class="tab-pane fade">
@@ -120,6 +123,7 @@
 
 </div>
 
+
 <script>
     const urlParams = new URLSearchParams(window.location.search);
     const branch = urlParams.get('branch');
@@ -135,6 +139,8 @@
     }
 
     showdetails(branch, event);
+
 </script>
+<script src="https://js.instamojo.com/v1/button.js"></script>
 </body>
 </html>
