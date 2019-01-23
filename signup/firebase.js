@@ -35,11 +35,11 @@ function createuser() {
     var gender = document.getElementById("gender").value;
     firebase.auth().createUserWithEmailAndPassword(email, password).then(function () {
 
+
         user = firebase.auth().currentUser;
         if (user) {
-            // User is signed in.
             var userId = user.uid;
-            database.ref('users/' + userId).update({
+            database.ref('users/' + email).update({
                 name: name,
                 email: email,
                 college: college,
@@ -48,7 +48,7 @@ function createuser() {
             }).then(function () {
                 // write what happens after registration is compete
                 alert("registration succesfull");
-                SwapDivsWithClick('signup', 'photoupload')
+                // document.location = "../"
 
 
             });
@@ -56,7 +56,7 @@ function createuser() {
     }).catch(function (error) {
         var errorCode = error.code;
         var errorMessage = error.message;
-        console.log(errorCode);
+        console.log(errorMessage);
         alert("registration failed try again")
     });
 }
@@ -120,7 +120,10 @@ function forget() {
 
 firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
-        document.location = "../"
+        user.providerData.forEach(function (profile) {
+            console.log(profile.email)
+        })
+        // document.location = "../"
     }
 
     else {

@@ -13,6 +13,7 @@ firebase.initializeApp(config);
 
 firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
+        console.log(user.email);
         uid = user.uid;
         var username = document.getElementById('name');
         var database = firebase.database().ref().child('users/' + uid);
