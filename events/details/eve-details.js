@@ -46,7 +46,7 @@ function showdetails(branch, event) {
 function getdetails(snap) {
     document.getElementById('eve-name').innerHTML = event;
     cap.innerHTML = snap.caption;
-    det.innerText = snap.description;
+    det.innerHTML = snap.description;
     rul.innerText = snap.rules;
     fee.innerHTML = "REGISTRATION FEE: " + snap.fee;
     on1.innerHTML = snap.coordinators.crd1.name;
