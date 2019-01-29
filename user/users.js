@@ -63,6 +63,7 @@ function signout() {
 
 function generateBarCode(user)
 {
+    console.log(user);
     var url = 'https://api.qrserver.com/v1/create-qr-code/?data=' + user;
     // $('#barcode').attr('src', url);
     var dc = document.getElementById("barcode");

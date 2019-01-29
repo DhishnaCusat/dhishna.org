@@ -77,8 +77,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="65" column="72" selection-start-line="65" selection-start-column="72" selection-end-line="65" selection-end-column="72" />
+            <state relative-caret-position="488">
+              <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -86,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
+            <state relative-caret-position="80">
               <caret line="68" column="83" selection-start-line="68" selection-start-column="83" selection-end-line="68" selection-end-column="83" />
             </state>
           </provider>
@@ -95,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/userpage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+            <state relative-caret-position="556">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -152,8 +152,8 @@
         <option value="$PROJECT_DIR$/events/index.html" />
         <option value="$PROJECT_DIR$/signup/firebase.js" />
         <option value="$PROJECT_DIR$/signup/index.html" />
-        <option value="$PROJECT_DIR$/user/userpage.css" />
         <option value="$PROJECT_DIR$/user/index.html" />
+        <option value="$PROJECT_DIR$/user/userpage.css" />
         <option value="$PROJECT_DIR$/user/users.js" />
       </list>
     </option>
@@ -237,15 +237,16 @@
       <workItem from="1548258051649" duration="7187000" />
       <workItem from="1548384550739" duration="261000" />
       <workItem from="1548427570161" duration="4776000" />
-      <workItem from="1548745216768" duration="4510000" />
+      <workItem from="1548745216768" duration="4798000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57111000" />
+    <option name="totallyTimeSpent" value="57399000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10310641" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -439,13 +440,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/userpage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/events/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
@@ -469,15 +463,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/user/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
+        <state relative-caret-position="80">
           <caret line="68" column="83" selection-start-line="68" selection-start-column="83" selection-end-line="68" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/userpage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="65" column="72" selection-start-line="65" selection-start-column="72" selection-end-line="65" selection-end-column="72" />
+        <state relative-caret-position="488">
+          <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
         </state>
       </provider>
     </entry>
