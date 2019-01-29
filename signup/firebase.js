@@ -33,6 +33,7 @@ function createuser() {
     var college = document.getElementById("college").value;
     var phone = document.getElementById("phone").value;
     var gender = document.getElementById("gender").value;
+
     firebase.auth().createUserWithEmailAndPassword(email, password).then(function () {
 
 
@@ -60,17 +61,13 @@ function createuser() {
 
             });
         }
-    }).catch(function (error) {
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        console.log(errorMessage);
-        alert("registration failed try again")
     });
 }
 
 function register() {
 
-
+    var gender = document.getElementById("submitbutton");
+    gender.parentNode.removeChild(gender);
     firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL).then(function () {
         createuser()
     }).catch(function (error) {
@@ -79,6 +76,11 @@ function register() {
                 createuser();
             });
         }
+    }).catch(function (error) {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.log(errorMessage);
+        alert("registration failed try again")
     });
 }
 
