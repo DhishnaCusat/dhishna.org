@@ -13,9 +13,11 @@ firebase.initializeApp(config);
 
 firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
+
         console.log(user.email);
         uid = user.uid;
         var username = document.getElementById('name');
+        generateBarCode(user.uid);
         var database = firebase.database().ref().child('users/' + uid);
         database.once('value', function (snap) {
             username.innerText = "Hi " + snap.val().name;
@@ -57,4 +59,10 @@ function signout() {
         console.error('Sign Out Error', error);
     });
 
+}
+
+function generateBarCode(user)
+{
+    var url = 'https://api.qrserver.com/v1/create-qr-code/?data=' + user;
+    $('#barcode').attr('src', url);
 }
