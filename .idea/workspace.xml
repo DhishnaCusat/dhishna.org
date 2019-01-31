@@ -179,6 +179,11 @@
             <path>
               <item name="dhisna" type="b2602c69:ProjectViewProjectNode" />
               <item name="dhisna" type="462c0819:PsiDirectoryNode" />
+              <item name="make-a-ton" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dhisna" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dhisna" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -236,18 +241,17 @@
       <workItem from="1548384550739" duration="261000" />
       <workItem from="1548427570161" duration="4776000" />
       <workItem from="1548745216768" duration="6177000" />
-      <workItem from="1548863837120" duration="859000" />
+      <workItem from="1548863837120" duration="2062000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59637000" />
+    <option name="totallyTimeSpent" value="60840000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10310641" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10310641" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
