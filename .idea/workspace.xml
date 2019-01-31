@@ -39,17 +39,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/signup/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
+            <state relative-caret-position="714">
               <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="-920">
+              <caret line="180" column="106" selection-start-line="180" selection-start-column="106" selection-end-line="180" selection-end-column="106" />
             </state>
           </provider>
         </entry>
@@ -63,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/signup/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+            <state relative-caret-position="595">
+              <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -153,11 +153,11 @@
         <option value="$PROJECT_DIR$/signup/main.js" />
         <option value="$PROJECT_DIR$/codestorm/js/relocation.js" />
         <option value="$PROJECT_DIR$/events/details/eve-details.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/user/index.html" />
         <option value="$PROJECT_DIR$/user/users.js" />
         <option value="$PROJECT_DIR$/signup/firebase.js" />
         <option value="$PROJECT_DIR$/signup/index.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -184,42 +184,7 @@
             <path>
               <item name="dhisna" type="b2602c69:ProjectViewProjectNode" />
               <item name="dhisna" type="462c0819:PsiDirectoryNode" />
-              <item name="codestorm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dhisna" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dhisna" type="462c0819:PsiDirectoryNode" />
-              <item name="codestorm" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dhisna" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dhisna" type="462c0819:PsiDirectoryNode" />
-              <item name="codestorm" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="icons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dhisna" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dhisna" type="462c0819:PsiDirectoryNode" />
-              <item name="codestorm" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dhisna" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dhisna" type="462c0819:PsiDirectoryNode" />
-              <item name="codestorm" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dhisna" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dhisna" type="462c0819:PsiDirectoryNode" />
-              <item name="signup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dhisna" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dhisna" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="index.pug" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
@@ -235,7 +200,11 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\dhisna\signup" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\dhisna\codestorm\img" />
       <recent name="D:\projects\dhishna\images" />
       <recent name="D:\projects\dhishna\events\branch" />
       <recent name="D:\projects\dhishna\signup" />
@@ -276,12 +245,12 @@
       <workItem from="1548384550739" duration="261000" />
       <workItem from="1548427570161" duration="4776000" />
       <workItem from="1548745216768" duration="6177000" />
-      <workItem from="1548863837120" duration="7704000" />
+      <workItem from="1548863837120" duration="9188000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66482000" />
+    <option name="totallyTimeSpent" value="67966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -470,13 +439,6 @@
     <entry file="file://$PROJECT_DIR$/index.pug">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/codestorm/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
@@ -504,13 +466,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/signup/firebase.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -523,8 +478,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/signup/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+        <state relative-caret-position="595">
+          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/signup/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-920">
+          <caret line="180" column="106" selection-start-line="180" selection-start-column="106" selection-end-line="180" selection-end-column="106" />
         </state>
       </provider>
     </entry>
