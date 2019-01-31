@@ -9,7 +9,7 @@ var config = {
 firebase.initializeApp(config);
 
 var database = firebase.database();
-
+var check=0
 
 function SwapDivsWithClick(div1, div2) {
     d1 = document.getElementById(div1);
@@ -34,6 +34,23 @@ function createuser() {
     var phone = document.getElementById("phone").value;
     var gender = document.getElementById("gender").value;
 
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+    {
+    }
+    else{
+        alert("You have entered an invalid email address!");
+        return (false)
+    }
+
+    var phoneno = /^\d{10}$/;
+    if((phone.match(phoneno))){
+        check=1
+    }
+    else
+    {
+        alert("Phone number is incorrect. Enter correct 10 digit number");
+        return false;
+    }
     firebase.auth().createUserWithEmailAndPassword(email, password).then(function () {
 
 
@@ -66,8 +83,10 @@ function createuser() {
 
 function register() {
 
-    var gender = document.getElementById("submitbutton");
-    gender.parentNode.removeChild(gender);
+    if (check == 1) {
+        var gender = document.getElementById("submitbutton");
+        gender.parentNode.removeChild(gender);
+    }
     firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL).then(function () {
         createuser()
     }).catch(function (error) {
@@ -81,6 +100,7 @@ function register() {
         var errorMessage = error.message;
         console.log(errorMessage);
         alert("registration failed try again")
+        refresh();
     });
 }
 
@@ -100,7 +120,7 @@ function loguser() {
 
         var errorCode = error.code;
         var errorMessage = error.message;
-
+        alert(errorMessage)
     });
 
 }

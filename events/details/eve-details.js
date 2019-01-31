@@ -104,12 +104,7 @@ function addpayment(eve,user) {
         insta_link += uuid;
         insta_link += "&data_readonly=data_" + field;
     }
-    var us = localStorage.getItem("user");
-    us = JSON.parse(us);
-    if(us){
-        add_details(us, insta_link)
-    }
-    else {
+
         firebase.database().ref('/users/' + user.uid).once("value").then(function (snapshot) {
             console.log(snapshot.val());
             localStorage.setItem("user", JSON.stringify(snapshot));
@@ -117,7 +112,7 @@ function addpayment(eve,user) {
 
 
         });
-    }
+
 }
 function changelocataion(){
     localStorage.setItem("branch",branch);

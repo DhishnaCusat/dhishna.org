@@ -68,5 +68,6 @@ function generateBarCode(user)
     var url = 'https://api.qrserver.com/v1/create-qr-code/?data=' + user;
     // $('#barcode').attr('src', url);
     var dc = document.getElementById("barcode");
-    dc.setAttribute("src",url)
+    dc.setAttribute("src",url);
+    dc.setAttribute("style","display:block");
 }
