@@ -34,23 +34,9 @@ function createuser() {
     var phone = document.getElementById("phone").value;
     var gender = document.getElementById("gender").value;
 
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
-    {
-    }
-    else{
-        alert("You have entered an invalid email address!");
-        return (false)
-    }
 
-    var phoneno = /^\d{10}$/;
-    if((phone.match(phoneno))){
-        check=1
-    }
-    else
-    {
-        alert("Phone number is incorrect. Enter correct 10 digit number");
-        return false;
-    }
+
+
     firebase.auth().createUserWithEmailAndPassword(email, password).then(function () {
 
 
@@ -82,11 +68,38 @@ function createuser() {
 }
 
 function register() {
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var name = document.getElementById("name").value;
+    var college = document.getElementById("college").value;
+    var phone = document.getElementById("phone").value;
+    var gender = document.getElementById("gender").value;
 
-    if (check == 1) {
-        var gender = document.getElementById("submitbutton");
-        gender.parentNode.removeChild(gender);
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+    {
+        var phoneno = /^\d{10}$/;
+        if((phone.match(phoneno))){
+            var pass = /^.{6,}$/;
+            if (password.match(pass)){
+                var gender = document.getElementById("submitbutton");
+                gender.parentNode.removeChild(gender);
+            }
+            else{
+                alert("Password is too small")
+                return
+            }
+        }
+        else
+        {
+            alert("Phone number is incorrect. Enter correct 10 digit number");
+            return false;
+        }
     }
+    else{
+        alert("You have entered an invalid email address!");
+        return (false)
+    }
+
     firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL).then(function () {
         createuser()
     }).catch(function (error) {
