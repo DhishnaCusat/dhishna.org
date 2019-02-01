@@ -13,11 +13,7 @@ function add_details(snapshot, insta_link) {
     console.log(snapshot);
 
 
-    insta_link += "&data_name=" + snapshot.name;
-    insta_link += "&data_email=" + snapshot.email;
-    insta_link += "&data_phone=" + snapshot.phone;
 
-    insta_link += "&data_readonly=data_name&data_readonly=data_email&data_readonly=data_phone";
 
     button = document.getElementsByClassName("im-checkout-btn")[0];
     di = document.getElementById("payment");
