@@ -16,17 +16,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/signup/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+            <state relative-caret-position="539">
+              <caret line="229" column="7" selection-start-line="229" selection-start-column="7" selection-end-line="229" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="261" column="57" selection-start-line="261" selection-start-column="57" selection-end-line="261" selection-end-column="57" />
+            <state relative-caret-position="522">
+              <caret line="261" selection-start-line="261" selection-end-line="261" selection-end-column="57" />
               <folding>
                 <element signature="n#style#0;n#span#1;n#p#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -38,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/gsap.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4794">
-              <caret line="282" lean-forward="true" selection-start-line="282" selection-end-line="282" />
+              <caret line="282" selection-start-line="282" selection-end-line="282" />
             </state>
           </provider>
         </entry>
@@ -52,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/events/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
+            <state relative-caret-position="1262">
               <caret line="81" selection-start-line="81" selection-end-line="81" />
             </state>
           </provider>
@@ -172,9 +172,9 @@
         <option value="$PROJECT_DIR$/../functions/index.js" />
         <option value="$PROJECT_DIR$/privacypolicy.txt" />
         <option value="$USER_HOME$/Downloads/dhisna-ac7e0-56097-export.json" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/gsap.css" />
         <option value="$PROJECT_DIR$/events/details/eve-details.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -279,12 +279,12 @@
       <workItem from="1548863837120" duration="12963000" />
       <workItem from="1548972034027" duration="736000" />
       <workItem from="1548994249647" duration="44000" />
-      <workItem from="1549004595483" duration="3578000" />
+      <workItem from="1549004595483" duration="4148000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76099000" />
+    <option name="totallyTimeSpent" value="76669000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -520,27 +520,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="261" column="57" selection-start-line="261" selection-start-column="57" selection-end-line="261" selection-end-column="57" />
-          <folding>
-            <element signature="n#style#0;n#span#1;n#p#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gsap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4794">
-          <caret line="282" lean-forward="true" selection-start-line="282" selection-end-line="282" />
+          <caret line="282" selection-start-line="282" selection-end-line="282" />
         </state>
       </provider>
     </entry>
@@ -563,8 +546,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/events/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
+        <state relative-caret-position="1262">
           <caret line="81" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/signup/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="229" column="7" selection-start-line="229" selection-start-column="7" selection-end-line="229" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="261" selection-start-line="261" selection-end-line="261" selection-end-column="57" />
+          <folding>
+            <element signature="n#style#0;n#span#1;n#p#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
