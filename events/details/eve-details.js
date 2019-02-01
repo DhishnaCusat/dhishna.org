@@ -90,8 +90,9 @@ function add_details(snapshot,insta_link) {
 }
 function addpayment(eve,user) {
     insta_link = eve.insta;
+    console.log(insta_link)
     field= eve.insta_uid;
-    insta_link+="?"
+    insta_link+="?";
     if(field) {
         insta_link += "data_" + field + "=";
         uuid = user.uid;
@@ -119,6 +120,7 @@ function pay() {
         if (user) {
             redirect= document.getElementById("redirect");
             redirect.parentNode.removeChild(redirect);
+            console.log(event);
             var sn = localStorage.getItem("events");
             sn = JSON.parse(sn);
             if(sn){
