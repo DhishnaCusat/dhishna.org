@@ -13,6 +13,13 @@ footer{
     padding-top: 1vw!important;
 }
 
+.space{
+    height: 50px;
+}
+.contact-numbers {
+        padding-top: 30px;
+    }
+
 @media only screen and (max-width: 768px)
 {
     .contact-us{
