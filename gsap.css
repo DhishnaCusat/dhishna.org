@@ -241,7 +241,18 @@ div#stats{
     display: none;
 }
 
+#schedule{
+    position: fixed;
+    left: 37vw;
+    font-size: 3vw;
+    background: black;
+    top:25vw;
+    color:white;
+}
 
+#schedule:hover{
+
+}
 @media only screen and (max-width: 768px)
 {
  .obj1{
@@ -264,6 +275,13 @@ div#stats{
     }
     .brand-name{
         height: 3vw;
+    }
+    #schedule{
+
+        left: 32vw;
+        font-size: 6vw;
+
+        top:50vw;
     }
 
 }
