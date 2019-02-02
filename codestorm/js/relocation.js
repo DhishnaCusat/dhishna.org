@@ -89,5 +89,5 @@ function getMobileOperatingSystem() {
         e[1].setAttribute("data-behaviour", "link");
     }
 }
-alert("Please Check out the Updated Schedule for the event");
+alert("the finalist have been decided please check out the attached doc");
 getMobileOperatingSystem()
