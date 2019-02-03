@@ -89,5 +89,5 @@ function getMobileOperatingSystem() {
         e[1].setAttribute("data-behaviour", "link");
     }
 }
-alert("the finalist have been decided please check out the attached doc");
+alert("the finalist have been decided please check out the attached doc , the location for the finals is same as the prelims");
 getMobileOperatingSystem()
