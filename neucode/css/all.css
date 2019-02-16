@@ -87,7 +87,7 @@ h6 {
 }
 
 .masthead {
-  min-height: 100rem;
+  min-height: 20rem;
   background: url("../img/bg-masthead.jpg");
   background-position: center center;
   background-repeat: no-repeat;
