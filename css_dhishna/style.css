@@ -5,6 +5,7 @@ body {
 
 canvas {
 	/*background-image: radial-gradient(#666, #333);*/
+	width:100vw;
 }
 
 #overlay
