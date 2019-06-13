@@ -13,12 +13,12 @@ function init() {
   root.camera.position.set(0, 0, 60);
 
   var width = 80;
-  var height = 40;
+  var height = 80;
 
   var slide = new Slide(width, height, 'out');
 	var l1 = new THREE.ImageLoader();
 	l1.setCrossOrigin('Anonymous');
-	l1.load('img_dhishna/img9.png', function(img) {
+	l1.load('img_dhishna/img11.png', function(img) {
 	  slide.setImage(img);
 	})
   root.scene.add(slide);
@@ -26,7 +26,7 @@ function init() {
   var slide2 = new Slide(width, height, 'in');
   var l2 = new THREE.ImageLoader();
 	l2.setCrossOrigin('Anonymous');
-	l2.load('img_dhishna/img10.png', function(img) {
+	l2.load('img_dhishna/img12.png', function(img) {
 		slide2.setImage(img);
 	})
 	
