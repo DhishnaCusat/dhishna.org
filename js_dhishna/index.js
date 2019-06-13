@@ -12,8 +12,8 @@ function init() {
   root.renderer.setPixelRatio(window.devicePixelRatio || 1);
   root.camera.position.set(0, 0, 60);
 
-  var width = 40;
-  var height = 20;
+  var width = 60;
+  var height = 30;
 
   var slide = new Slide(width, height, 'out');
 	var l1 = new THREE.ImageLoader();
