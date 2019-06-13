@@ -14,6 +14,18 @@ function init() {
 
   var width = 50;
   var height = 50;
+	
+// 	Change width and height if deive is desktop or tablet
+// 	self invoking function
+	(function (){
+		var isMobile = /iPhone|Android/i.test(navigator.userAgent);
+		if(!isMobile)
+		{
+			width = 80;
+			height = 80;
+		}
+	})();
+// end of self invoking function	
 
   var slide = new Slide(width, height, 'out');
 	var l1 = new THREE.ImageLoader();
