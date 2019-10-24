@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sunburn!</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--SCRIPTS *************************************************** -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDSONbyBW4lcRxOxj6vyXorgKImq5s-elw",
+            authDomain: "registration-ef370.firebaseapp.com",
+            databaseURL: "https://registration-ef370.firebaseio.com",
+            projectId: "registration-ef370",
+            storageBucket: "registration-ef370.appspot.com",
+            messagingSenderId: "569989941430",
+            appId: "1:569989941430:web:b345538ad22158e4c5be17"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <div class="container">
+        <div class="box" onclick="addName()">
+            <div class="name" id="name">
+                RAMYA RAMACHADRAM
+            </div>
+            <div class="hello">
+                CONFIRM
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+<style>
+    .container {
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+    }
+
+    html,
+    body {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Montserrat', sans-serif;
+        overflow: hidden;
+    }
+
+
+    .box {
+        width: 500px;
+        height: 40vh;
+        background-color: #FF4040;
+        margin: auto;
+        box-shadow: 0 62px 90px rgba(0, 0, 0, 0.438);
+        transform: translate(0, 10vh);
+        border-radius: 30px;
+    }
+
+    @media only screen and (max-width: 420px) {
+
+        .box {
+            width: 80vw;
+            margin-top: 20vh;
+        }
+    }
+
+    .hello {
+        color: white;
+        text-align: center;
+        font-size: 2em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        cursor: pointer;
+        width: 200px;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-style: solid;
+        border-color: white;
+        border-radius: 20px;
+
+    }
+
+    .name h5 {
+        font-weight: 300;
+    }
+
+    .name {
+        width: 100%;
+        font-size: 1.7em;
+        color: white;
+        text-align: center;
+        font-weight: 600;
+        padding-top: 10vh;
+    }
+</style>
