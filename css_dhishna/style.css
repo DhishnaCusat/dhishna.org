@@ -31,3 +31,23 @@ canvas {
 	font-size: 2em;
 
 }
+
+.box{
+	width: 100%;
+
+}
+.about{
+	width: 200px;
+	background-color: #DC6482;
+	margin: auto;
+	color: white;
+	font-family: sans-serif;
+	text-align: center;
+	border-radius: 10px;
+	margin-top: 5px;
+	padding: 5px;
+}
+.about a{
+	color: white;
+	text-decoration: none;
+}
