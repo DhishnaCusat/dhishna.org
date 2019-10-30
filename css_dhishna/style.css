@@ -39,7 +39,7 @@ canvas {
 .about{
 	width: 200px;
 	background-color: #DC6482;
-	background-image: linear-gradient(#DC6482, #CE4D95,#8E3C8E);
+	background-image: linear-gradient(to right,#DC6482, #CE4D95,#8E3C8E);
 	margin: auto;
 	color: white;
 	font-family: sans-serif;
