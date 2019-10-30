@@ -38,7 +38,7 @@ function init() {
   var slide2 = new Slide(width, height, 'in');
   var l2 = new THREE.ImageLoader();
 	l2.setCrossOrigin('Anonymous');
-	l2.load('img_dhishna/img111.png', function(img) {
+	l2.load('img_dhishna/img12.png', function(img) {
 		slide2.setImage(img);
 	})
 	
