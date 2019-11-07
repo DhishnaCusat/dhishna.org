@@ -32,8 +32,71 @@ canvas {
 	font-size: 2em;
 
 }
+.arrow_down{
+	width: 0;
+      height: 0;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-top: 50px solid #D3558C;
+      border-radius: 10px;
+ 
+	transform: translate(0,-100px);
+	margin: auto;
+}
 
-.box{
+.head{
+  font-size: 1.2em;
+  text-align: center;
+  font-family: sans-serif;
+  letter-spacing: 10px;
+  color: #D74E94;
+  text-shadow: 5px 5px 5px grey;
+
+}
+.subhead{
+  font-size: 1em;
+
+  font-family: 'Roboto',sans-serif;
+  font-weight: lighter;
+  color: white;
+  /*color: #D84784;*/
+  /*text-shadow: 5px 5px 5px grey;*/
+  padding: 10px;
+  /*text-align: center;*/
+  box-shadow: 1px 1px 5px grey;
+  border-radius: 10px;
+  margin: 20px;
+  line-height: 20px;
+  max-width:500px; 
+  background-color: #DC6482;
+  background-image: linear-gradient(to right,#DC6482, #CE4D95,#8E3C8E);
+
+}
+
+.about_content{
+  font-size: 1em;
+  font-weight: lighter;
+  font-family: sans-serif;
+  color: white;
+  /*text-shadow: 5px 5px 5px grey;*/
+  padding: 10px;
+  /*text-align: center;*/
+  box-shadow: 1px 1px 5px grey;
+  border-radius: 10px;
+  margin: 20px;
+  line-height: 20px;
+   max-width:500px;
+   background-color: #DC6482;
+  background-image: linear-gradient(to right,#DC6482, #CE4D95,#8E3C8E);
+}
+
+@media screen and (min-width: 500px)
+{
+  .about_content,.subhead{
+    margin: 20px auto;
+  }
+}
+/*.box{
 	width: 100%;
 
 }
@@ -52,7 +115,7 @@ canvas {
 .about a{
 	color: white;
 	text-decoration: none;
-}
+}*/
 
 
 /*============================*/
@@ -71,4 +134,23 @@ canvas {
     from { transform: translate(0,  0px); }
     65%  { transform: translate(0, 15px); }
     to   { transform: translate(0, -0px); }    
+}
+
+/*-------------------------------------*/
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(-100px);
+  }
+  40% {
+    transform: translateY(-130px);
+  }
+  60% {
+    transform: translateY(-115px);
+  }
 }
