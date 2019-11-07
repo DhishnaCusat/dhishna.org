@@ -17,6 +17,7 @@ canvas {
 	margin: 0px 0px ;
 	transition: transform 0.5s ;
 	position: fixed;
+	z-index: 1000000;
 }
 
 
