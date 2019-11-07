@@ -161,12 +161,12 @@ div img{
   border-radius: 10px;
   margin: 20px;
   line-height: 20px;
-   max-width:400px;
+   max-width:500px;
    background-color: #DC6482;
   background-image: linear-gradient(to right,#DC6482, #CE4D95,#8E3C8E);
 }
 
-@media screen and (min-width: 400px)
+@media screen and (min-width: 500px)
 {
   .about_content,.subhead{
     margin: 20px auto;
