@@ -108,57 +108,7 @@ canvas {
         border-radius:10px;
       }
 
-     /*============================================*/
-     /* Media query*/
-     /*============================================*/
-     @media screen and (max-width: 1000px){
-      .abt_quote{
-        background-color: orange;
-        width: 100%;
-        height: 200px;
-      }
-
-      .abt_about{
-        background-color: blue;
-        width: 100%;
-        height: 300px;
-      }
-      .abt_picture{
-        background-color: green;
-        width: 100%;
-        height: 300px;
-      }
-      .abt_count{
-        background-color: pink;
-        width: 700px;
-        height: 200px;
-      }
-      .abt_watch{
-        display: none;
-      }
-      .abt_video_group{
-        /*background-color: purple;*/
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-        .abt_video{
-          width: 100%;
-          height:300px;
-          background-color:yellow;
-        }
-        .abt_history{
-          width: 100%;
-          height:300px;
-          background-color:lightgreen;
-        }
-      .abt_end{
-        background-color: blue;
-        width: 100%;
-        height: 200px;
-      }
-     }
+    
 
      /*============================================*/
      /* Individual element style*/
@@ -259,6 +209,10 @@ canvas {
           float: left;
           height: 300px;
           width: 400px;
+        }
+        .slide img{
+          width: 100%;
+          height: 100%;
         }
         
         .slide:nth-child(1) {
@@ -367,3 +321,194 @@ canvas {
         transform: translateY(-115px);
       }
     }
+
+
+
+ /*============================================*/
+     /* Media query*/
+     /*============================================*/
+     @media screen and (max-width: 1000px){
+      .abt_quote{
+        /* background-color: orange; */
+        width:500px;
+        margin: auto;
+      }
+
+      .abt_about{
+        /* background-color: blue; */
+        width: 100%;
+      }
+      .abt_picture{
+        /* background-color: green; */
+        width: 100%;
+        height: 300px;
+      }
+      .abt_count{
+        /* background-color: pink; */
+        width: 100%;
+        height: 200px;
+
+      }
+      .abt_watch{
+        display: none;
+      }
+      .abt_video_group{
+        background:white;
+        width: 100%;
+        box-shadow: none;
+        padding: 0px;
+      }
+        .abt_video{
+          width: 500px;
+          /* background-color:yellow; */
+          margin: auto;
+        }
+        .abt_history{
+          width: 100%;
+         
+          /* background-color:lightgreen; */
+        }
+      .abt_end{
+        /* background-color: blue; */
+        width: 100%;
+        
+      }
+
+      /* ---------------------------- */
+      .about
+        {
+            max-width: 500px;
+            margin: auto;
+        }
+        #slideshow {
+          margin: auto;
+          width: 500px;
+        }
+        .rectangle{
+          max-width: 500px;
+          margin: auto;
+          margin-top: 30px;
+        }
+        .frame{
+          width: 500px;
+        }
+
+        .abt_end_p{
+          background: rgb(144,61,142);
+          background: linear-gradient(138deg, rgba(144,61,142,1) 0%, rgba(219,99,130,1) 100%);
+          box-shadow: 0px 11px 30px rgba(0, 0, 0, 0.438);
+          color:white;
+          max-width: 500px;
+          margin: auto;
+        }
+        .abt_history p{
+          background: rgb(144,61,142);
+          background: linear-gradient(138deg, rgba(144,61,142,1) 0%, rgba(219,99,130,1) 100%);
+          box-shadow: 0px 11px 30px rgba(0, 0, 0, 0.438);
+          border-radius: 10px;
+          padding: 10px;
+          max-width: 500px;
+          margin: auto;
+          margin-top: 10px;
+        }
+        .footer{
+          display: none;
+        }
+      /* ---------------------------- */
+     }
+
+
+
+      @media screen and (max-width: 500px){
+      .abt_quote{
+        
+        margin: auto;
+        margin-bottom: 40px;
+      }
+
+      .abt_about{
+       
+        width: 100%;
+        height: unset;
+        margin: 10px;
+        margin-bottom: 40px;
+      }
+      .abt_picture{
+
+        width: 100%;
+        height: 300px;
+        margin-bottom: 40px;
+      }
+      .abt_count{
+        
+        width: 100%;
+      }
+      .abt_count p{
+        font-size: 0.5em;
+      }
+      h3{
+        font-size: 0.8em;
+      }
+      .abt_watch{
+        display: none;
+      }
+      .abt_video_group{
+        background:white;
+        width: 100%;
+        box-shadow: none;
+        padding: 0px;
+      }
+        .abt_video{
+          width: 100%; 
+          margin: auto;
+          margin-bottom: 40px;
+        }
+        .abt_history{
+         
+        }
+      .abt_end{
+       
+        width: 100%;
+        
+      }
+
+      /* ---------------------------- */
+      .about
+        {
+          
+        }
+        #slideshow {
+          margin: auto;
+          width: 100%;
+        }
+        .rectangle{
+         
+        }
+        .inline{
+          width: 100%;
+        }
+        .frame{
+          width: 100%;
+        }
+
+        .abt_end_p{
+          background: rgb(144,61,142);
+          background: linear-gradient(138deg, rgba(144,61,142,1) 0%, rgba(219,99,130,1) 100%);
+          box-shadow: 0px 11px 30px rgba(0, 0, 0, 0.438);
+          color:white;
+          max-width: 500px;
+          margin: auto;
+        }
+        .abt_history p{
+          background: rgb(144,61,142);
+          background: linear-gradient(138deg, rgba(144,61,142,1) 0%, rgba(219,99,130,1) 100%);
+          box-shadow: 0px 11px 30px rgba(0, 0, 0, 0.438);
+          border-radius: 10px;
+          padding: 10px;
+          max-width: 500px;
+          margin: auto;
+          margin-top: 10px;
+        }
+      
+      /* ---------------------------- */
+     }
