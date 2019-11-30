@@ -46,28 +46,28 @@ canvas {
         margin: auto;
       }
       .abt_quote{
-        /*background-color: orange;*/
+        
         width: 100%;
         height: 100px;
       }
 
       .abt_about{
-        /*background-color: blue;*/
+        
         width: 550px;
         height: 350px;
       }
       .abt_picture{
-        /*background-color: green;*/
+       
         width: 450px;
         height: 350px;
       }
       .abt_count{
-        /*background-color: pink;*/
+       
         width: 700px;
         height: 200px;
       }
       .abt_watch{
-        /*background-color: blue;*/
+       
         width: 300px;
         height: 200px;
       }
@@ -87,16 +87,14 @@ canvas {
       }
         .abt_video{
           width: 400px;
-          /*height:300px;*/
-          /*background-color:yellow;*/
+          
         }
         .abt_history{
           width: 400px;
-          /*height:300px;*/
-          /*background-color:lightgreen;*/
+          
         }
       .abt_end{
-        /*background-color: blue;*/
+       
         width: 500px;
         height: 250px;
         padding-top: 30px;
@@ -105,7 +103,8 @@ canvas {
         background-color: black;
         height: 40px;
         width: 100%;
-        border-radius:10px;
+        color: white;
+        text-align: center;
       }
 
     
@@ -201,14 +200,14 @@ canvas {
         }
         
         .slide-wrapper {
-          width: 1600px;
+          width: 400%;
           -webkit-animation: slide 10s ease infinite;
         }
         
         .slide {
           float: left;
           height: 300px;
-          width: 400px;
+          width: 25%;
         }
         .slide img{
           width: 100%;
@@ -239,12 +238,12 @@ canvas {
         
         @-webkit-keyframes slide {
           20% {margin-left: 0px;}
-          30% {margin-left: -400px;}
-          50% {margin-left: -400px;}
-          60% {margin-left: -800px;}
-          70% {margin-left: -800px;}
-          80% {margin-left: -1200px;}
-          90% {margin-left: -1200px;}
+          30% {margin-left: -100%;}
+          50% {margin-left: -100%;}
+          60% {margin-left: -200%;}
+          70% {margin-left: -200%;}
+          80% {margin-left: -300%;}
+          90% {margin-left: -300%;}
         }
 
 
@@ -329,22 +328,22 @@ canvas {
      /*============================================*/
      @media screen and (max-width: 1000px){
       .abt_quote{
-        /* background-color: orange; */
+      
         width:500px;
         margin: auto;
       }
 
       .abt_about{
-        /* background-color: blue; */
+       
         width: 100%;
       }
       .abt_picture{
-        /* background-color: green; */
+        
         width: 100%;
         height: 300px;
       }
       .abt_count{
-        /* background-color: pink; */
+       
         width: 100%;
         height: 200px;
 
@@ -360,16 +359,16 @@ canvas {
       }
         .abt_video{
           width: 500px;
-          /* background-color:yellow; */
+         
           margin: auto;
         }
         .abt_history{
           width: 100%;
          
-          /* background-color:lightgreen; */
+         
         }
       .abt_end{
-        /* background-color: blue; */
+        
         width: 100%;
         
       }
@@ -412,7 +411,9 @@ canvas {
           margin-top: 10px;
         }
         .footer{
-          display: none;
+          /*display: none;*/
+          border-radius: 0px;
+
         }
       /* ---------------------------- */
      }
@@ -440,14 +441,17 @@ canvas {
         margin-bottom: 40px;
       }
       .abt_count{
-        
+        height: unset;
         width: 100%;
+        margin:30px;
       }
       .abt_count p{
-        font-size: 0.5em;
+        font-size: 2em;
+        text-align: center;
       }
       h3{
-        font-size: 0.8em;
+        font-size: 2em;
+        text-align: center;
       }
       .abt_watch{
         display: none;
@@ -457,6 +461,7 @@ canvas {
         width: 100%;
         box-shadow: none;
         padding: 0px;
+
       }
         .abt_video{
           width: 100%; 
@@ -464,10 +469,10 @@ canvas {
           margin-bottom: 40px;
         }
         .abt_history{
-         
+         margin: 10px;
         }
       .abt_end{
-       
+        margin: 10px;
         width: 100%;
         
       }
@@ -482,7 +487,8 @@ canvas {
           width: 100%;
         }
         .rectangle{
-         
+          display: flex;
+          flex-wrap: wrap;
         }
         .inline{
           width: 100%;
