@@ -100,10 +100,10 @@ canvas {
         padding-top: 30px;
       }
       .footer{
-        background-color: black;
+        background-color: white;
         height: 40px;
         width: 100%;
-        color: white;
+        color: black;
         text-align: center;
       }
 
